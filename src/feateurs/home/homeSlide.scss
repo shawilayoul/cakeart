@@ -3,10 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #faedcd;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+  background-color: #f8f9fa;
+  height: 80vh;
   .silder {
     width: 100%;
     display: flex;
@@ -21,6 +19,8 @@
     }
     .midile {
       display: flex;
+      align-items: center;
+      justify-content: center;
       flex-direction: column;
       gap: 1rem;
       h2 {
@@ -55,11 +55,8 @@
   padding: 0.5rem;
   width: 90vw;
   height: 23%;
-  top: 35rem;
-  left: 3rem;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  position: absolute;
   .items {
     display: flex;
     align-items: center;

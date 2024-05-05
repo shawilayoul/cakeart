@@ -1,12 +1,14 @@
 import React from 'react'
-import Header from '../../components/header/Header'
 import HomeSlide from '../../feateurs/home/HomeSlide'
+import HomeMenu from '../../feateurs/home/HomeMenu'
+import HomeRecipe from '../../feateurs/home/HomeRecipe'
 
 const Home = () => {
   return (
     <div>
-     <Header/>
      <HomeSlide/> 
+     <HomeMenu/>
+     <HomeRecipe/>
     </div>
   )
 }

@@ -1,0 +1,48 @@
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  div{
+    h2{
+      margin-top: 1rem;
+    }
+  }
+  .slideItems {
+    border: 1px solid gray;
+    margin-top: 1rem;
+    .slideImg {
+      img {
+        width: 236px;
+        height: 250px;
+        &:hover {
+          opacity: 0.6;
+          cursor: pointer;
+        }
+      }
+    }
+    .slideInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      h3 {
+        color: orangered;
+        margin: 0;
+      }
+      button {
+        padding: 8px 20px;
+        background-color: inherit;
+        border-radius: 8px;
+        border: 1px solid orangered;
+        cursor: pointer;
+        &:hover {
+          background-color: orangered;
+          color: white;
+        }
+      }
+    }
+  }
+}
