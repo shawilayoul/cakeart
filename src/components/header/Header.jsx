@@ -14,13 +14,35 @@ const Header = () => {
         <div className="menuLeft">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" className="text-link">
+                Home
+              </Link>
             </li>
-            <li><Link to="blog">Blog</Link></li>
-            <li><Link to="recipes">Recipes</Link></li>
-            <li><Link to="shop">Shop</Link></li>
-            <li><Link to="about">About us</Link></li>
-            <li><Link to="contact">Contact</Link></li>
+            <li>
+              <Link to="blog" className="text-link">
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link to="recipes" className="text-link">
+                Recipes
+              </Link>
+            </li>
+            <li>
+              <Link to="shop" className="text-link">
+                Shop
+              </Link>
+            </li>
+            <li>
+              <Link to="about" className="text-link">
+                About us
+              </Link>
+            </li>
+            <li>
+              <Link to="contact" className="text-link">
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="menuRight">

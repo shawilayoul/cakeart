@@ -11,11 +11,13 @@
   }
   .slideItems {
     border: 1px solid gray;
+    border-radius: 6px;
     margin-top: 1rem;
     .slideImg {
       img {
         width: 236px;
-        height: 250px;
+        height: 200px;
+        border-radius: 6px;
         &:hover {
           opacity: 0.6;
           cursor: pointer;

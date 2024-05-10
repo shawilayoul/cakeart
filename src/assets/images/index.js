@@ -15,7 +15,7 @@ import person2 from '../person2.jpg'
 import person3 from '../person3.jpg'
 import person4 from '../person4.jpg'
 import person5 from '../person5.jpg'
-
+import bgImage from '../bg_header.jpg'
 
 const images = {
     cake1,
@@ -34,7 +34,8 @@ const images = {
     person2,
     person3,
     person4,
-    person5
+    person5,
+    bgImage
 }
 
 export default images

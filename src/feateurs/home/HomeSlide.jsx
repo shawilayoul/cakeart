@@ -1,8 +1,10 @@
 import "@splidejs/react-splide/css/sea-green";
 import images from "../../assets/images";
+import { slideData } from "../../constants/data";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./homeSlide.scss";
 const HomeSlide = () => {
+  console.log(slideData);
   return (
     <div className="container">
       <div className="homeSlideContainer">
@@ -16,87 +18,27 @@ const HomeSlide = () => {
           }}
           aria-labelledby="autoplay-example-heading"
         >
-          {" "}
-          <SplideSlide>
-            <div className="silder">
-              <div className="left">
-                <img src={images.cake1} alt="" />
-              </div>
-              <div className="midile">
-                <h2>Celebaration Cake</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-                  <br />
-                  quis ad reprehenderit maiores a saepe soluta ea at molestias
-                  alias?
-                </p>
-                <button>See The Recipes</button>
-              </div>
-              <div className="right">
-                <img src={images.cake1} alt="" />
-              </div>
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="silder">
-              <div className="left">
-                <img src={images.cake2} alt="" />
-              </div>
-              <div className="midile">
-                <h2>Celebaration Cake</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-                  <br />
-                  quis ad reprehenderit maiores a saepe soluta ea at molestias
-                  alias?
-                </p>
-                <button>See The Recipes</button>
-              </div>
-              <div className="right">
-                <img src={images.cake2} alt="" />
-              </div>
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="silder">
-              <div className="left">
-                <img src={images.cake3} alt="" />
-              </div>
-              <div className="midile">
-                <h2>Celebaration Cake</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-                  <br />
-                  quis ad reprehenderit maiores a saepe soluta ea at molestias
-                  alias?
-                </p>
-                <button>See The Recipes</button>
-              </div>
-              <div className="right">
-                <img src={images.cake3} alt="" />
-              </div>
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="silder">
-              <div className="left">
-                <img src={images.cake4} alt="" />
-              </div>
-              <div className="midile">
-                <h2>Celebaration Cake</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-                  <br />
-                  quis ad reprehenderit maiores a saepe soluta ea at molestias
-                  alias?
-                </p>
-                <button>See The Recipes</button>
-              </div>
-              <div className="right">
-                <img src={images.cake4} alt="" />
-              </div>
-            </div>
-          </SplideSlide>
+          {slideData.map((slide) => {
+            return (
+              <SplideSlide>
+                <div className="slideItems">
+                  <div className="silder">
+                    <div className="left">
+                      <img src={slide.image} alt="" />
+                    </div>
+                    <div className="midile">
+                      <h2>{slide.title}</h2>
+                      <p>{slide.description}</p>
+                      <button>See The Recipes</button>
+                    </div>
+                    <div className="right">
+                      <img src={slide.image} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </SplideSlide>
+            );
+          })}
         </Splide>
       </div>
       <div className="ourSections">
@@ -106,9 +48,7 @@ const HomeSlide = () => {
           </div>
           <div className="right">
             <h2>Products</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
         <div className="items">
@@ -117,9 +57,7 @@ const HomeSlide = () => {
           </div>
           <div className="right">
             <h2>Cake Class</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
         <div className="items">
@@ -128,9 +66,7 @@ const HomeSlide = () => {
           </div>
           <div className="right">
             <h2>Ricepes</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
       </div>
