@@ -37,9 +37,11 @@
       .slideInfo {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        align-items: center;
+        gap: 2px;
         p {
           margin: 0;
+          font-size: 15px;
           span {
             color: orangered;
           }

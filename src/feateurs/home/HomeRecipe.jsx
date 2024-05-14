@@ -1,59 +1,36 @@
 import React from "react";
 import images from "../../assets/images";
 import "./homeRecipe.scss";
+import { FaRegStar } from "react-icons/fa";
+
+import { homeRecipe } from "../../constants/data";
 const HomeRecipe = () => {
   return (
     <div className="container">
       <h2>RECENT RECIPES</h2>
       <div className="RecipeContainer">
-        <div className="recipeItems">
-          <div className="recipeImg">
-            <img src={images.cake6j} alt="" />
-            <p>******</p>
-          </div>
-          <div className="slideInfo">
-            <p>Black Forest</p>
-            <p>
-              By <span> Ali</span> 10 minutes
-            </p>
-          </div>
-        </div>
-        <div className="recipeItems">
-          <div className="recipeImg">
-            <img src={images.cake2j} alt="" />
-            <p>******</p>
-          </div>
-          <div className="slideInfo">
-            <p>Black Forest</p>
-            <p>
-              By <span> Ali</span> 10 minutes
-            </p>
-          </div>
-        </div>
-        <div className="recipeItems">
-          <div className="recipeImg">
-            <img src={images.cake4j} alt="" />
-            <p>******</p>
-          </div>
-          <div className="slideInfo">
-            <p>Black Forest</p>
-            <p>
-              By <span> Ali</span> 10 minutes
-            </p>
-          </div>
-        </div>
-        <div className="recipeItems">
-          <div className="recipeImg">
-            <img src={images.cake5j} alt="" />
-            <p>******</p>
-          </div>
-          <div className="slideInfo">
-            <p>Black Forest</p>
-            <p>
-              By <span> Ali</span> 10 minutes
-            </p>
-          </div>
-        </div>
+        {homeRecipe.map(({id,image,title}) => {
+          return (
+            <div className="recipeItems" key={id}>
+              <div className="recipeImg">
+                <img src={image} alt="" />
+                <p>
+                <FaRegStar />
+                <FaRegStar />
+                <FaRegStar />
+                <FaRegStar />
+                <FaRegStar />
+                </p>
+              </div>
+              <div className="slideInfo">
+                <p>{title}</p>
+                <p>
+                  By <span> Ali</span> 10 minutes
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
       <div className="btnview">
         <button>View All</button>

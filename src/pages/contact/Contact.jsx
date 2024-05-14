@@ -1,4 +1,6 @@
 import images from "../../assets/images";
+import { FaMapMarkerAlt ,FaRegClock } from "react-icons/fa";
+
 import "./contact.scss";
 
 const Contact = () => {
@@ -23,11 +25,13 @@ const Contact = () => {
             <p>Icon gose here</p>
           </div>
           <div className="contactInfo">
-            <p>Icon </p>
+            <p>
+              <FaMapMarkerAlt />{" "}
+            </p>
             <p>329 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
           </div>
           <div className="contactInfo">
-            <p>Icon </p>
+            <p><FaRegClock /></p>
             <p>Opening Hour 8:00 AM – 10:00 PM</p> <p>Monday – Sunday</p>
           </div>
           <div className="contactInfo">
@@ -52,10 +56,31 @@ const Contact = () => {
               <input type="text" placeholder="Subject" />
             </div>
             <div className="inputfield">
-              <textarea name="" placeholder="Your message" id=""></textarea>
+              <textarea
+                name=""
+                rows="5"
+                cols="40"
+                placeholder="Your message"
+                id=""
+              ></textarea>
             </div>
             <button>SEND MESSAGE</button>
           </div>
+        </div>
+      </div>
+      <div className="map">
+        <div style={{ width: "100%" }}>
+          <iframe
+            width="100%"
+            height="300"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(cake%20shop)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          >
+            <a href="https://www.gps.ie/">gps trackers</a>
+          </iframe>
         </div>
       </div>
     </div>

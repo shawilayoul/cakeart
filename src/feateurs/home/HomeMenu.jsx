@@ -1,6 +1,7 @@
 import images from "../../assets/images";
 import "./homemenu.scss";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { homeMenuData } from "../../constants/data";
 
 const HomeMenu = () => {
   return (
@@ -20,78 +21,22 @@ const HomeMenu = () => {
           }}
           aria-label="My Favorite Images"
         >
-          <SplideSlide>
-            <div className="slideItems">
-              <div className="slideImg">
-                <img src={images.cake1j} alt="" />
-              </div>
-              <div className="slideInfo">
-                <h3>Black Forest</h3>
-                <p>$18.00</p>
-                <button>Add To Cart</button>
-              </div>
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="slideItems">
-              <div className="slideImg">
-                <img src={images.cake2j} alt="" />
-              </div>
-              <div className="slideInfo">
-                <h3>Black Forest</h3>
-                <p>$18.00</p>
-                <button>Add To Cart</button>
-              </div>
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="slideItems">
-              <div className="slideImg">
-                <img src={images.cake3j} alt="" />
-              </div>
-              <div className="slideInfo">
-                <h3>Black Forest</h3>
-                <p>$18.00</p>
-                <button>Add To Cart</button>
-              </div>
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="slideItems">
-              <div className="slideImg">
-                <img src={images.cake4j} alt="" />
-              </div>
-              <div className="slideInfo">
-                <h3>Black Forest</h3>
-                <p>$18.00</p>
-                <button>Add To Cart</button>
-              </div>
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="slideItems">
-              <div className="slideImg">
-                <img src={images.cake5j} alt="" />
-              </div>
-              <div className="slideInfo">
-                <h3>Black Forest</h3>
-                <p>$18.00</p>
-                <button>Add To Cart</button>
-              </div>
-            </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="slideItems">
-              <div className="slideImg">
-                <img src={images.cake6j} alt="" />
-              </div>
-              <div className="slideInfo">
-                <h3>Black Forest</h3>
-                <p>$18.00</p>
-                <button>Add To Cart</button>
-              </div>
-            </div>
-          </SplideSlide>
+          {homeMenuData.map((item) => {
+            return (
+              <SplideSlide>
+                <div className="slideItems">
+                  <div className="slideImg">
+                    <img src={item.image} alt="" />
+                  </div>
+                  <div className="slideInfo">
+                    <h3>{item.title}</h3>
+                    <p>${item.price}</p>
+                    <button>Add To Cart</button>
+                  </div>
+                </div>
+              </SplideSlide>
+            );
+          })}
         </Splide>
       </div>
     </div>

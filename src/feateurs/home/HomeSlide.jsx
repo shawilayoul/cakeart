@@ -18,21 +18,21 @@ const HomeSlide = () => {
           }}
           aria-labelledby="autoplay-example-heading"
         >
-          {slideData.map((slide) => {
+          {slideData.map(({ id, image, title, description }) => {
             return (
               <SplideSlide>
-                <div className="slideItems">
+                <div className="slideItems" key={id}>
                   <div className="silder">
                     <div className="left">
-                      <img src={slide.image} alt="" />
+                      <img src={image} alt="" />
                     </div>
                     <div className="midile">
-                      <h2>{slide.title}</h2>
-                      <p>{slide.description}</p>
+                      <h2>{title}</h2>
+                      <p>{description}</p>
                       <button>See The Recipes</button>
                     </div>
                     <div className="right">
-                      <img src={slide.image} alt="" />
+                      <img src={image} alt="" />
                     </div>
                   </div>
                 </div>
@@ -44,7 +44,7 @@ const HomeSlide = () => {
       <div className="ourSections">
         <div className="items">
           <div className="left">
-            <img src={images.cake1} alt="" />
+            <img src={images.iconbox1} alt="" />
           </div>
           <div className="right">
             <h2>Products</h2>
@@ -53,7 +53,7 @@ const HomeSlide = () => {
         </div>
         <div className="items">
           <div className="left">
-            <img src={images.cake1} alt="" />
+            <img src={images.iconbox2} alt="" />
           </div>
           <div className="right">
             <h2>Cake Class</h2>
@@ -62,7 +62,7 @@ const HomeSlide = () => {
         </div>
         <div className="items">
           <div className="left">
-            <img src={images.cake1} alt="" />
+            <img src={images.iconbox3} alt="" />
           </div>
           <div className="right">
             <h2>Ricepes</h2>

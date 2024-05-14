@@ -16,6 +16,15 @@ import person3 from '../person3.jpg'
 import person4 from '../person4.jpg'
 import person5 from '../person5.jpg'
 import bgImage from '../bg_header.jpg'
+import menu1 from './menu1.webp'
+import menu2 from './menu2.webp'
+import menu3 from './menu3.webp'
+import menu4 from './menu4.webp'
+import menu5 from './menu5.webp'
+import menu6 from './menu6.jpg'
+import iconbox1 from './iconbox1.webp'
+import iconbox2 from './iconbox2.webp'
+import iconbox3 from './iconbox3.webp'
 
 const images = {
     cake1,
@@ -35,7 +44,16 @@ const images = {
     person3,
     person4,
     person5,
-    bgImage
+    bgImage,
+    menu1,
+    menu2,
+    menu3,
+    menu4,
+    menu5,
+    menu6,
+    iconbox1,
+    iconbox2,
+    iconbox3
 }
 
 export default images
