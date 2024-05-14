@@ -7,7 +7,7 @@ const Header = () => {
     <nav className="headerContainer">
       <div className="logo">
         <h2>
-          Cake <span>Art</span>
+          Silver <span>Cake</span>
         </h2>
       </div>
       <div className="menu">

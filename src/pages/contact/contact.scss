@@ -1,0 +1,25 @@
+.contactContainer{
+    width: 100vw;
+    .contactTop{
+        position: relative;
+        img{
+            width: 100%;
+            height: 60vh;
+        }
+        .title{
+            top: 40%;
+            left: 50%;
+            position: absolute;
+           h2{
+            color: orangered;
+            font-size: 30px;
+           }
+        }
+    }
+    .formContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
