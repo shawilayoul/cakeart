@@ -1,6 +1,8 @@
-import React from "react";
 import images from "../../assets/images";
 import "./shop.scss";
+import { FaRegStar } from "react-icons/fa";
+import { shopData } from "../../constants/data";
+import { topsale } from "../../constants/data";
 import Button from "../../components/Button";
 
 const Shop = () => {
@@ -46,30 +48,25 @@ const Shop = () => {
           </div>
           <div className="topSale">
             <h3>Top Sale Products</h3>
-            <div className="topSaleProduct">
-              <img src={images.cake2} alt="" />
-              <div className="productInfo">
-                <p>Blact Forest</p>
-                <p>*******</p>
-                <p>$18.00</p>
-              </div>
-            </div>
-            <div className="topSaleProduct">
-              <img src={images.cake5} alt="" />
-              <div className="productInfo">
-                <p>Blact Forest</p>
-                <p>*******</p>
-                <p>$18.00</p>
-              </div>
-            </div>
-            <div className="topSaleProduct">
-              <img src={images.cake1} alt="" />
-              <div className="productInfo">
-                <p>Blact Forest</p>
-                <p>*******</p>
-                <p>$18.00</p>
-              </div>
-            </div>
+
+            {topsale.map(({ id, image, title, price }) => {
+              return (
+                <div className="topSaleProduct" key={id}>
+                  <img src={image} alt="" />
+                  <div className="productInfo">
+                    <p>{title}</p>
+                    <p>
+                      <FaRegStar />
+                      <FaRegStar />
+                      <FaRegStar />
+                      <FaRegStar />
+                      <FaRegStar />
+                    </p>
+                    <p>${price}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
         <div className="shopMenuContainer">
@@ -90,96 +87,20 @@ const Shop = () => {
             </div>
           </div>
           <div className="shopMenus">
-            <div className="slideItems">
-              <div className="slideImg">
-                <img src={images.cake1j} alt="" />
-              </div>
-              <div className="slideInfo">
-                <h3>Black Forest</h3>
-                <p>$18.00</p>
-                <button>Add To Cart</button>
-              </div>
-            </div>
-            <div className="slideItems">
-              <div className="slideImg">
-                <img src={images.cake1j} alt="" />
-              </div>
-              <div className="slideInfo">
-                <h3>Black Forest</h3>
-                <p>$18.00</p>
-                <button>Add To Cart</button>
-              </div>
-            </div>
-            <div className="slideItems">
-              <div className="slideImg">
-                <img src={images.cake1j} alt="" />
-              </div>
-              <div className="slideInfo">
-                <h3>Black Forest</h3>
-                <p>$18.00</p>
-                <button>Add To Cart</button>
-              </div>
-            </div>
-            <div className="slideItems">
-              <div className="slideImg">
-                <img src={images.cake1j} alt="" />
-              </div>
-              <div className="slideInfo">
-                <h3>Black Forest</h3>
-                <p>$18.00</p>
-                <button>Add To Cart</button>
-              </div>
-            </div>
-            <div className="slideItems">
-              <div className="slideImg">
-                <img src={images.cake1j} alt="" />
-              </div>
-              <div className="slideInfo">
-                <h3>Black Forest</h3>
-                <p>$18.00</p>
-                <button>Add To Cart</button>
-              </div>
-            </div>
-            <div className="slideItems">
-              <div className="slideImg">
-                <img src={images.cake1j} alt="" />
-              </div>
-              <div className="slideInfo">
-                <h3>Black Forest</h3>
-                <p>$18.00</p>
-                <button>Add To Cart</button>
-              </div>
-            </div>
-            <div className="slideItems">
-              <div className="slideImg">
-                <img src={images.cake1j} alt="" />
-              </div>
-              <div className="slideInfo">
-                <h3>Black Forest</h3>
-                <p>$18.00</p>
-                <button>Add To Cart</button>
-              </div>
-            </div>
-            <div className="slideItems">
-              <div className="slideImg">
-                <img src={images.cake1j} alt="" />
-              </div>
-              <div className="slideInfo">
-                <h3>Black Forest</h3>
-                <p>$18.00</p>
-                <button>Add To Cart</button>
-              </div>
-            </div>
-            <div className="slideItems">
-              <div className="slideImg">
-                <img src={images.cake1j} alt="" />
-              </div>
-              <div className="slideInfo">
-                <h3>Black Forest</h3>
-                <p>$18.00</p>
-                <button>Add To Cart</button>
-              </div>
-            </div>
+            {shopData.map(({ id, title, image, price }) => {
+              return (
+                <div className="slideItems">
+                  <div className="slideImg">
+                    <img src={image} alt="slideimag" />
+                  </div>
+                  <div className="slideInfo">
+                    <h3>{title}</h3>
+                    <p>{price}</p>
+                    <button>Add To Cart</button>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

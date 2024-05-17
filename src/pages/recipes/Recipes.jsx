@@ -5,10 +5,12 @@ import { RecipesData } from "../../constants/data";
 import { useState } from "react";
 const Recipes = () => {
   const [selectedCat, setSelectCat] = useState("");
+
+  //filter recipe by category or country
   const visibelCategory = selectedCat
     ? RecipesData.filter(
         (recipe) =>
-          recipe.category === selectedCat || recipe.categoryAll === selectedCat
+          recipe.category === selectedCat || recipe.categoryAll === selectedCat || recipe.cuisine === selectedCat
       )
     : RecipesData;
   console.log(selectedCat);
@@ -36,13 +38,13 @@ const Recipes = () => {
         </div>
         <div className="searchElement">
           <div className="searchOption">
-            <select name="" id="">
-              <option value="">Recipe Cuisine</option>
-              <option value="">French Cuisine</option>
-              <option value="">Indian Cuisine</option>
-              <option value="">Italian Cuisine</option>
-              <option value="">Spanish Cuisine</option>
-              <option value="">VietNam Cuisine</option>
+            <select name="" id="" onChange={(e)=>setSelectCat(e.target.value)}>
+              <option value="All">All Recipe Cuisine</option>
+              <option value="french">French Cuisine</option>
+              <option value="indian">Indian Cuisine</option>
+              <option value="italian">Italian Cuisine</option>
+              <option value="spanish">Spanish Cuisine</option>
+              <option value="vietnam">VietNam Cuisine</option>
             </select>
           </div>
           <div className="searchInpt">
@@ -92,13 +94,13 @@ const Recipes = () => {
                     src={image}
                     alt="recipe"
                   />
-                  <p>
+                  <div>
                     <FaRegStar />
                     <FaRegStar />
                     <FaRegStar />
                     <FaRegStar />
                     <FaRegStar />
-                  </p>
+                  </div>
                 </div>
                 <div className="slideInfo">
                   <p>{title}</p>

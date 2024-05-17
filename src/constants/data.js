@@ -2,7 +2,7 @@ import images from "../assets/images";
 export const slideData = [
   {
     id: 1,
-    image: images.menu1,
+    image: images.menu3,
     title: "Celebaration Cake",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.quis ad reprehenderit maiores a saepe soluta ea at molestiasalias? ",
@@ -16,7 +16,7 @@ export const slideData = [
   },
   {
     id: 3,
-    image: images.menu3,
+    image: images.menu1,
     title: "Celebaration Cake",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.quis ad reprehenderit maiores a saepe soluta ea at molestiasalias? ",
@@ -104,6 +104,26 @@ export const homeRecipe = [
     image: images.cake4j,
     title: "Tartufo Di Pizza",
   },
+  {
+    id: 1,
+    image: images.cake6j,
+    title: "Sachertorte",
+  },
+  {
+    id: 2,
+    image: images.cake5j,
+    title: "Tiramisu",
+  },
+  {
+    id: 3,
+    image: images.cake2j,
+    title: "Dessert Cake",
+  },
+  {
+    id: 4,
+    image: images.cake4j,
+    title: "Tartufo Di Pizza",
+  },
 ];
 //blog data
 export const blogData = [
@@ -166,6 +186,7 @@ export const RecipesData = [
     time: 8,
     category: "pizzas",
     categoryAll: "All",
+    cuisine: "indian",
   },
   {
     id: 2,
@@ -175,6 +196,7 @@ export const RecipesData = [
     time: 5,
     category: "pizzas",
     categoryAll: "All",
+    cuisine: "french",
   },
   {
     id: 3,
@@ -184,6 +206,7 @@ export const RecipesData = [
     time: 15,
     category: "chocolate",
     categoryAll: "All",
+    cuisine: "french",
   },
   {
     id: 4,
@@ -193,6 +216,7 @@ export const RecipesData = [
     time: 7,
     category: "chocolate",
     categoryAll: "All",
+    cuisine: "indian",
   },
   {
     id: 5,
@@ -202,6 +226,7 @@ export const RecipesData = [
     time: 5,
     category: "pizzas",
     categoryAll: "All",
+    cuisine: "indian",
   },
   {
     id: 6,
@@ -211,6 +236,7 @@ export const RecipesData = [
     time: 5,
     category: "cupCake",
     categoryAll: "All",
+    cuisine: "french",
   },
   {
     id: 7,
@@ -220,6 +246,7 @@ export const RecipesData = [
     time: 15,
     category: "cupCake",
     categoryAll: "All",
+    cuisine: "italian",
   },
   {
     id: 8,
@@ -229,6 +256,7 @@ export const RecipesData = [
     time: 7,
     category: "cupCake",
     categoryAll: "All",
+    cuisine: "italian",
   },
   {
     id: 9,
@@ -238,6 +266,7 @@ export const RecipesData = [
     time: 8,
     category: "cupCake",
     categoryAll: "All",
+    cuisine: "spanish",
   },
   {
     id: 10,
@@ -247,6 +276,7 @@ export const RecipesData = [
     time: 5,
     category: "cupCake",
     categoryAll: "All",
+    cuisine: "italian",
   },
   {
     id: 11,
@@ -256,6 +286,7 @@ export const RecipesData = [
     time: 15,
     category: "pizzas",
     categoryAll: "All",
+    cuisine: "spanish",
   },
   {
     id: 12,
@@ -265,6 +296,7 @@ export const RecipesData = [
     time: 7,
     category: "pizzas",
     categoryAll: "All",
+    cuisine: "spanish",
   },
   {
     id: 13,
@@ -274,6 +306,7 @@ export const RecipesData = [
     time: 8,
     category: "pizzas",
     categoryAll: "All",
+    cuisine: "italian",
   },
   {
     id: 14,
@@ -283,6 +316,7 @@ export const RecipesData = [
     time: 5,
     category: "pizzas",
     categoryAll: "All",
+    cuisine: "vietnam",
   },
   {
     id: 15,
@@ -291,6 +325,7 @@ export const RecipesData = [
     chesf: "Jhon",
     time: 8,
     category: "chocolate",
+    cuisine: "vietnam",
     categoryAll: "All",
   },
   {
@@ -301,6 +336,7 @@ export const RecipesData = [
     time: 5,
     category: "chocolate",
     categoryAll: "All",
+    cuisine: "vietnam",
   },
   {
     id: 17,
@@ -310,5 +346,98 @@ export const RecipesData = [
     time: 15,
     category: "chocolate",
     categoryAll: "All",
+    cuisine: "italian",
+  },
+];
+
+//shop data
+export const shopData = [
+  {
+    id: 1,
+    image: images.cake1j,
+    title: "Black Force",
+    price: 18.0,
+  },
+  {
+    id: 2,
+    image: images.cake2j,
+    title: "CupCake",
+    price: 20.0,
+  },
+  {
+    id: 3,
+    image: images.cake3j,
+    title: "pizzas ice cream",
+    price: 10.0,
+  },
+  {
+    id: 4,
+    image: images.cake4j,
+    title: "Black Force",
+    price: 18.0,
+  },
+  {
+    id: 5,
+    image: images.cake5j,
+    title: "Black Force",
+    price: 30.0,
+  },
+  {
+    id: 6,
+    image: images.cake3j,
+    title: "Black Force",
+    price: 18.0,
+  },
+  {
+    id: 7,
+    image: images.cake2j,
+    title: "Black Force",
+    price: 30.0,
+  },
+  {
+    id: 8,
+    image: images.cake5j,
+    title: "cupeCake",
+    price: 18.0,
+  },
+  {
+    id: 9,
+    image: images.cake6j,
+    title: "Black Force",
+    price: 23.0,
+  },
+  { id: 10, image: images.cake3j, title: "Black Force", price: 18.0 },
+  {
+    id: 11,
+    image: images.cake1j,
+    title: "Black Force",
+    price: 18.0,
+  },
+];
+
+export const topsale = [
+  {
+    id: 1,
+    image: images.cake1j,
+    title: "Black Force",
+    price: 18.0,
+  },
+  {
+    id: 2,
+    image: images.cake2j,
+    title: "CupCake",
+    price: 20.0,
+  },
+  {
+    id: 3,
+    image: images.cake3j,
+    title: "pizzas ice cream",
+    price: 10.0,
+  },
+  {
+    id: 4,
+    image: images.cake4j,
+    title: "Black Force",
+    price: 18.0,
   },
 ];

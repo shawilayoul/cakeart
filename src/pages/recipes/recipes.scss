@@ -1,4 +1,5 @@
 .recipeContainer {
+  width: 100vw;
   .recipeTop {
     position: relative;
     width: 100vw;
@@ -12,13 +13,13 @@
       position: absolute;
       h2 {
         color: orangered;
-        font-size: 30px;
+        font-size: 35px;
       }
     }
   }
   .recipeSearch {
     position: absolute;
-    top: 20%;
+    top: 60%;
     left: 13%;
     width: 70vw;
     height: 20vh;
@@ -62,6 +63,13 @@
     flex-direction: column;
     align-items: center;
     margin-top: 5rem;
+    .title{
+      h2{
+        color: orangered;
+        font-size: 30px;
+        text-transform: capitalize;
+      }
+    }
     .recipesCategory {
      display: flex;
      gap: 2rem;
@@ -73,7 +81,7 @@
     .RecipeItemsContainer {
       display: grid;
       grid-template-columns: auto auto auto auto;
-      grid-gap: 50px;
+      grid-gap:2rem;
       .recipeItems {
         position: relative;
         display: flex;
@@ -91,7 +99,7 @@
               opacity: 0.6;
             }
           }
-          p {
+          div {
             position: absolute;
             top: 10.5rem;
             color: goldenrod;

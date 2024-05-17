@@ -7,7 +7,7 @@ import { homeRecipe } from "../../constants/data";
 const HomeRecipe = () => {
   return (
     <div className="container">
-      <h2>RECENT RECIPES</h2>
+      <h2>Recents Recipes</h2>
       <div className="RecipeContainer">
         {homeRecipe.map(({id,image,title}) => {
           return (

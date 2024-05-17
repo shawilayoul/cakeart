@@ -1,11 +1,12 @@
 import React from 'react'
+import './home.scss'
 import HomeSlide from '../../feateurs/home/HomeSlide'
 import HomeMenu from '../../feateurs/home/HomeMenu'
 import HomeRecipe from '../../feateurs/home/HomeRecipe'
 
 const Home = () => {
   return (
-    <div>
+    <div className='homeContainer'>
      <HomeSlide/> 
      <HomeMenu/>
      <HomeRecipe/>
