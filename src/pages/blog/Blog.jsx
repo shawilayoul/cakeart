@@ -1,5 +1,6 @@
 import "./blog.scss";
 import images from "../../assets/images";
+import { blogData } from "../../constants/data";
 const Blog = () => {
   return (
     <div className="blogContainer">
@@ -9,48 +10,24 @@ const Blog = () => {
           <h2>Blog</h2>
         </div>
       </div>
-      <div className="blogBottom">
-        <div className="blogImg">
-          <img src={images.cake4j} alt="blog" />
-        </div>
-        <div className="blogInfo">
-          <h3>Snack Cake</h3>
-          <p>By Thang On Cream Category, Ice, Summer Cake</p>
-          <p>
-            When I was a kid, I daydreamed that I’d come home 
-            from school and, magically, my mom would turn into one <br /> of
-            those mothers who would be lavishly frosting a …
-          </p>
-        </div>
-      </div>
-      <div className="blogBottom">
-        <div className="blogImg">
-          <img src={images.cake5j} alt="blog" />
-        </div>
-        <div className="blogInfo">
-          <h3>Snack Cake</h3>
-          <p>By Thang On Cream Category, Ice, Summer Cake</p>
-          <p>
-            When I was a kid, I daydreamed that I’d come home 
-            from school and, magically, my mom would turn into one <br /> of
-            those mothers who would be lavishly frosting a …
-          </p>
-        </div>
-      </div>
-      <div className="blogBottom">
-        <div className="blogImg">
-          <img src={images.cake2j} alt="blog" />
-        </div>
-        <div className="blogInfo">
-          <h3>Snack Cake</h3>
-          <p>By Thang On Cream Category, Ice, Summer Cake</p>
-          <p>
-            When I was a kid, I daydreamed that I’d come home 
-            from school and, magically, my mom would turn into one <br /> of
-            those mothers who would be lavishly frosting a …
-          </p>
-        </div>
-      </div>
+      {blogData.map(({ id, image, title, subTitle, description }) => {
+        return (
+          <div className="blogBottom">
+            <div className="blogImg" key={id}>
+              <img src={image} alt="blog" />
+            </div>
+            <div className="blogInfo">
+              <h3>{title}</h3>
+              <h4>{subTitle}</h4>
+              <p>
+                {description}
+              </p>
+            </div>
+          </div>
+        )
+      })}
+
+
     </div>
   );
 };

@@ -1,5 +1,7 @@
 import images from "../../assets/images";
 import "./recipes.scss";
+import { FaRegStar } from "react-icons/fa";
+import { RecipesData } from "../../constants/data";
 const Recipes = () => {
   return (
     <div className="recipeContainer">
@@ -20,7 +22,7 @@ const Recipes = () => {
             </select>
           </div>
           <div className="searchInpt">
-            <input type="text" />
+            <input type="text" placeholder="Input ingredient here" />
           </div>
         </div>
         <div className="searchElement">
@@ -35,7 +37,7 @@ const Recipes = () => {
             </select>
           </div>
           <div className="searchInpt">
-            <input type="text" />
+            <input type="text" placeholder="Input Keyword here" />
           </div>
         </div>
         <div className="searchElement">
@@ -64,55 +66,31 @@ const Recipes = () => {
           <p>Pizzas</p>
         </div>
         <div className="RecipeItemsContainer">
-        <div className="recipeItems">
-          <div className="recipeImg">
-            <img style={{width:"200px",height:"200px"}} src={images.cake6j} alt="" />
-            <p>******</p>
-          </div>
-          <div className="slideInfo">
-            <p>Black Forest</p>
-            <p>
-              By <span> Ali</span> 10 minutes
-            </p>
-          </div>
+          {
+            RecipesData.map(({ id, image, title, chesf, time }) => {
+              return (
+                <div className="recipeItems" key={id}>
+                  <div className="recipeImg">
+                    <img style={{ width: "200px", height: "200px" }} src={image} alt="recipe" />
+                    <p>
+                      <FaRegStar />
+                      <FaRegStar />
+                      <FaRegStar />
+                      <FaRegStar />
+                      <FaRegStar /></p>
+                  </div>
+                  <div className="slideInfo">
+                    <p>{title}</p>
+                    <p>
+                      By <span>{chesf}</span> {time} minutes
+                    </p>
+                  </div>
+                </div>
+              )
+            })
+          }
+
         </div>
-        <div className="recipeItems">
-          <div className="recipeImg">
-            <img style={{width:"200px",height:"200px"}}  src={images.cake2j} alt="" />
-            <p>******</p>
-          </div>
-          <div className="slideInfo">
-            <p>Black Forest</p>
-            <p>
-              By <span> Ali</span> 10 minutes
-            </p>
-          </div>
-        </div>
-        <div className="recipeItems">
-          <div className="recipeImg">
-            <img style={{width:"200px",height:"200px"}}  src={images.cake4j} alt="" />
-            <p>******</p>
-          </div>
-          <div className="slideInfo">
-            <p>Black Forest</p>
-            <p>
-              By <span> Ali</span> 10 minutes
-            </p>
-          </div>
-        </div>
-        <div className="recipeItems">
-          <div className="recipeImg">
-            <img style={{width:"200px",height:"200px"}}  src={images.cake5j} alt="" />
-            <p>******</p>
-          </div>
-          <div className="slideInfo">
-            <p>Black Forest</p>
-            <p>
-              By <span> Ali</span> 10 minutes
-            </p>
-          </div>
-        </div>
-      </div>
       </section>
     </div>
   );

@@ -12,6 +12,7 @@
     h2 {
       text-decoration: wavy;
       text-transform: uppercase;
+      cursor: pointer;
       span {
         color: orangered;
       }
@@ -42,6 +43,7 @@
     .menuRight {
       display: flex;
       align-items: center;
+      cursor: pointer;
       gap: 2rem;
     }
   }
