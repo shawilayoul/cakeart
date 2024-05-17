@@ -2,7 +2,16 @@ import images from "../../assets/images";
 import "./recipes.scss";
 import { FaRegStar } from "react-icons/fa";
 import { RecipesData } from "../../constants/data";
+import { useState } from "react";
 const Recipes = () => {
+  const [selectedCat, setSelectCat] = useState("");
+  const visibelCategory = selectedCat
+    ? RecipesData.filter(
+        (recipe) =>
+          recipe.category === selectedCat || recipe.categoryAll === selectedCat
+      )
+    : RecipesData;
+  console.log(selectedCat);
   return (
     <div className="recipeContainer">
       <section className="recipeTop">
@@ -14,11 +23,11 @@ const Recipes = () => {
       <section className="recipeSearch">
         <div className="searchElement">
           <div className="searchOption">
-            <select name="" id="">
-              <option value="">Recipe Category</option>
-              <option value="">Chocolate</option>
-              <option value="">Cupcake</option>
-              <option value="">Pizzas</option>
+            <select name="" id="" onChange={(e)=>setSelectCat(e.target.value)}>
+              <option value="All">All Category</option>
+              <option value="chocolate">Chocolate</option>
+              <option value="cupCake">Cupcake</option>
+              <option value="pizzas">Pizzas</option>
             </select>
           </div>
           <div className="searchInpt">
@@ -59,37 +68,47 @@ const Recipes = () => {
         <div className="title">
           <h2>All Recipes</h2>
         </div>
-        <div className="recipesCat">
-          <p>All</p>
-          <p>Chocalate</p>
-          <p>Cupcake</p>
-          <p>Pizzas</p>
+        <div className="recipesCategory">
+          <div value="All" onClick={() => setSelectCat("All")}>
+            All
+          </div>
+          <div value="chocalate" onClick={() => setSelectCat("chocolate")}>
+            Chocolate
+          </div>
+          <div value="cupCake" onClick={() => setSelectCat("cupCake")}>
+            Cupcake
+          </div>
+          <div option="pizzas" onClick={() => setSelectCat("pizzas")}>
+            Pizzas
+          </div>
         </div>
         <div className="RecipeItemsContainer">
-          {
-            RecipesData.map(({ id, image, title, chesf, time }) => {
-              return (
-                <div className="recipeItems" key={id}>
-                  <div className="recipeImg">
-                    <img style={{ width: "200px", height: "200px" }} src={image} alt="recipe" />
-                    <p>
-                      <FaRegStar />
-                      <FaRegStar />
-                      <FaRegStar />
-                      <FaRegStar />
-                      <FaRegStar /></p>
-                  </div>
-                  <div className="slideInfo">
-                    <p>{title}</p>
-                    <p>
-                      By <span>{chesf}</span> {time} minutes
-                    </p>
-                  </div>
+          {visibelCategory.map(({ id, image, title, chesf, time }) => {
+            return (
+              <div className="recipeItems" key={id}>
+                <div className="recipeImg">
+                  <img
+                    style={{ width: "200px", height: "200px" }}
+                    src={image}
+                    alt="recipe"
+                  />
+                  <p>
+                    <FaRegStar />
+                    <FaRegStar />
+                    <FaRegStar />
+                    <FaRegStar />
+                    <FaRegStar />
+                  </p>
                 </div>
-              )
-            })
-          }
-
+                <div className="slideInfo">
+                  <p>{title}</p>
+                  <p>
+                    By <span>{chesf}</span> {time} minutes
+                  </p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
     </div>

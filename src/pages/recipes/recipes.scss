@@ -18,7 +18,7 @@
   }
   .recipeSearch {
     position: absolute;
-    top: 60%;
+    top: 20%;
     left: 13%;
     width: 70vw;
     height: 20vh;
@@ -57,58 +57,64 @@
       }
     }
   }
-  .allRecipes{
+  .allRecipes {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5rem;
-    .recipesCat{
-      display: flex;
-      align-items: center;
-      gap: 2rem;
+    .recipesCategory {
+     display: flex;
+     gap: 2rem;
+     margin: 1rem;
+     div &:hover{
+      cursor: pointer;
+     }
     }
-    .RecipeItemsContainer{
-      display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    .recipeItems {
-      position: relative;
-      .recipeImg {
-        margin-bottom: 2rem;
-        img {
-          width: 200px;
-          height: 200px;
-          border-radius: 8px;
-          cursor: pointer;
-          &:hover {
-            opacity: 0.6;
-          }
-        }
-        p {
-          position: absolute;
-          top: 10.5rem;
-          color: goldenrod;
-          background-color: white;
-          border: 1px solid gray;
-          border-radius: 6px;
-          padding: 8px 20px;
-          left: 3rem;
-          cursor: pointer;
-        }
-      }
-      .slideInfo {
+    .RecipeItemsContainer {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-gap: 50px;
+      .recipeItems {
+        position: relative;
         display: flex;
         flex-direction: column;
-        gap: 8px;
-        p {
-          margin: 0;
-          span {
-            color: orangered;
+        align-items: center;
+
+        .recipeImg {
+          margin-bottom: 2rem;
+          img {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            cursor: pointer;
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+          p {
+            position: absolute;
+            top: 10.5rem;
+            color: goldenrod;
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 6px;
+            padding: 8px 20px;
+            left: 3rem;
+            cursor: pointer;
+          }
+        }
+        .slideInfo {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          p {
+            margin: 0;
+            span {
+              color: orangered;
+            }
           }
         }
       }
-    }
     }
   }
 }
