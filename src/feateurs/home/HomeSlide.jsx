@@ -3,8 +3,9 @@ import images from "../../assets/images";
 import { slideData } from "../../constants/data";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./homeSlide.scss";
+import { useNavigate } from "react-router-dom";
 const HomeSlide = () => {
-  console.log(slideData);
+  const navigate = useNavigate()
   return (
     <div className="container">
       <div className="homeSlideContainer">
@@ -21,15 +22,15 @@ const HomeSlide = () => {
           {slideData.map(({ id, image, title, description }) => {
             return (
               <SplideSlide>
-                <div className="slideItems" key={id}>
+                <div className="slideItems" key={id} >
                   <div className="silder">
-                    <div className="left">
+                    <div className="left" >
                       <img src={image} alt="" />
                     </div>
                     <div className="midile">
                       <h2>{title}</h2>
                       <p>{description}</p>
-                      <button>See The Recipes</button>
+                      <button onClick={()=>navigate('recipes')}>See The Recipes</button>
                     </div>
                     <div className="right">
                       <img src={image} alt="" />

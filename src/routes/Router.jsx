@@ -7,7 +7,7 @@ import Recipes from "../pages/recipes/Recipes";
 import Blog from "../pages/blog/Blog";
 import Shop from "../pages/shop/Shop";
 import Cart from "../components/cart/Cart";
-
+import SigleMenu from "../feateurs/home/SigleMenu";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "cart",
         element: <Cart/>,
+      },
+      {
+        path: "singlMenu/:id",
+        element: <SigleMenu/>,
       },
     ],
   },

@@ -2,8 +2,11 @@ import images from "../../assets/images";
 import "./homemenu.scss";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { homeMenuData } from "../../constants/data";
+import { useNavigate } from "react-router-dom";
 
 const HomeMenu = () => {
+
+  const navigate = useNavigate()
   return (
     <div className="menuContainer">
       <div>
@@ -21,17 +24,17 @@ const HomeMenu = () => {
           }}
           aria-label="My Favorite Images"
         >
-          {homeMenuData.map((item) => {
+          {homeMenuData.map(({id,image,title,price}) => {
             return (
               <SplideSlide>
                 <div className="slideItems">
-                  <div className="slideImg">
-                    <img src={item.image} alt="" />
+                  <div className="slideImg" onClick={()=>navigate(`singlMenu/${id}`)}>
+                    <img src={image} alt="" />
                   </div>
                   <div className="slideInfo">
-                    <h3>{item.title}</h3>
-                    <p>${item.price}</p>
-                    <button>Add To Cart</button>
+                    <h3>{title}</h3>
+                    <p>${price}</p>
+                    <button onClick={()=>navigate('cart')}>Add To Cart</button>
                   </div>
                 </div>
               </SplideSlide>
