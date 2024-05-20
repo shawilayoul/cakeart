@@ -2,7 +2,7 @@ import images from "../assets/images";
 export const slideData = [
   {
     id: 1,
-    image: images.menu3,
+    image: images.menu5,
     title: "Celebaration Cake",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.quis ad reprehenderit maiores a saepe soluta ea at molestiasalias? ",
@@ -30,7 +30,7 @@ export const slideData = [
   },
   {
     id: 5,
-    image: images.menu5,
+    image: images.menu3,
     title: "Celebaration Cake",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.quis ad reprehenderit maiores a saepe soluta ea at molestiasalias? ",

@@ -20,7 +20,7 @@ const HomeMenu = () => {
             autoplay: false,
             rewind: true,
             perPage: 4,
-            width: 1000,
+            width: 1100,
           }}
           aria-label="My Favorite Images"
         >

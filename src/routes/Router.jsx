@@ -8,6 +8,8 @@ import Blog from "../pages/blog/Blog";
 import Shop from "../pages/shop/Shop";
 import Cart from "../components/cart/Cart";
 import SigleMenu from "../feateurs/home/SigleMenu";
+import RecipeDetail from "../pages/recipes/RecipeDetail";
+import HomeRecipeDetail from "../feateurs/home/HomeRecipeDetail";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -42,6 +44,14 @@ const router = createBrowserRouter([
         path: "singlMenu/:id",
         element: <SigleMenu/>,
       },
+      {
+        path:'recipeDetaill/:id',
+        element:<HomeRecipeDetail/>
+      },
+      {
+        path:'recipes/recipeDetaill/:id',
+        element:<RecipeDetail/>
+      }
     ],
   },
 ]);

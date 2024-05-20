@@ -2,9 +2,11 @@ import React from "react";
 import images from "../../assets/images";
 import "./homeRecipe.scss";
 import { FaRegStar } from "react-icons/fa";
-
 import { homeRecipe } from "../../constants/data";
+import { useNavigate } from "react-router-dom";
+
 const HomeRecipe = () => {
+  const navigate = useNavigate()
   return (
     <div className="container">
       <h2>Recents Recipes</h2>
@@ -12,7 +14,7 @@ const HomeRecipe = () => {
         {homeRecipe.map(({id,image,title}) => {
           return (
             <div className="recipeItems" key={id}>
-              <div className="recipeImg">
+              <div className="recipeImg" onClick={()=>navigate(`recipeDetaill/${id}`)}>
                 <img src={image} alt="" />
                 <p>
                 <FaRegStar />

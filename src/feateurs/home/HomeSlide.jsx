@@ -15,7 +15,7 @@ const HomeSlide = () => {
             gap: "1rem",
             autoplay: false,
             rewind: false,
-            width: 1000,
+            width: 1200,
           }}
           aria-labelledby="autoplay-example-heading"
         >

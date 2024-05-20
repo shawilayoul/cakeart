@@ -3,8 +3,10 @@ import "./recipes.scss";
 import { FaRegStar } from "react-icons/fa";
 import { RecipesData } from "../../constants/data";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const Recipes = () => {
   const [selectedCat, setSelectCat] = useState("");
+  const navigate = useNavigate()
 
   //filter recipe by category or country
   const visibelCategory = selectedCat
@@ -88,7 +90,7 @@ const Recipes = () => {
           {visibelCategory.map(({ id, image, title, chesf, time }) => {
             return (
               <div className="recipeItems" key={id}>
-                <div className="recipeImg">
+                <div className="recipeImg" onClick={()=>navigate(`recipeDetaill/${id}`)}>
                   <img
                     style={{ width: "200px", height: "200px" }}
                     src={image}
