@@ -4,15 +4,18 @@ import { FaRegStar } from "react-icons/fa";
 import { RecipesData } from "../../constants/data";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 const Recipes = () => {
   const [selectedCat, setSelectCat] = useState("");
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   //filter recipe by category or country
   const visibelCategory = selectedCat
     ? RecipesData.filter(
         (recipe) =>
-          recipe.category === selectedCat || recipe.categoryAll === selectedCat || recipe.cuisine === selectedCat
+          recipe.category === selectedCat ||
+          recipe.categoryAll === selectedCat ||
+          recipe.cuisine === selectedCat
       )
     : RecipesData;
   console.log(selectedCat);
@@ -27,7 +30,11 @@ const Recipes = () => {
       <section className="recipeSearch">
         <div className="searchElement">
           <div className="searchOption">
-            <select name="" id="" onChange={(e)=>setSelectCat(e.target.value)}>
+            <select
+              name=""
+              id=""
+              onChange={(e) => setSelectCat(e.target.value)}
+            >
               <option value="All">All Category</option>
               <option value="chocolate">Chocolate</option>
               <option value="cupCake">Cupcake</option>
@@ -40,7 +47,11 @@ const Recipes = () => {
         </div>
         <div className="searchElement">
           <div className="searchOption">
-            <select name="" id="" onChange={(e)=>setSelectCat(e.target.value)}>
+            <select
+              name=""
+              id=""
+              onChange={(e) => setSelectCat(e.target.value)}
+            >
               <option value="All">All Recipe Cuisine</option>
               <option value="french">French Cuisine</option>
               <option value="indian">Indian Cuisine</option>
@@ -90,9 +101,11 @@ const Recipes = () => {
           {visibelCategory.map(({ id, image, title, chesf, time }) => {
             return (
               <div className="recipeItems" key={id}>
-                <div className="recipeImg" onClick={()=>navigate(`recipeDetaill/${id}`)}>
+                <div
+                  className="recipeImg"
+                  onClick={() => navigate(`recipeDetaill/${id}`)}
+                >
                   <img
-                    style={{ width: "200px", height: "200px" }}
                     src={image}
                     alt="recipe"
                   />

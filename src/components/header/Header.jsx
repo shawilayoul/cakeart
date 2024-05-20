@@ -2,8 +2,11 @@ import { GrCart } from "react-icons/gr";
 import { FaSearch } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import "./header.scss";
+import { useContext } from "react";
+import CakeContext from "../../contexts/CakeContexts";
 const Header = () => {
   const navigate = useNavigate();
+const{countProduct} = useContext(CakeContext)
   return (
     <nav className="headerContainer">
       <div className="logo">
@@ -53,7 +56,7 @@ const Header = () => {
           <div className="cart" onClick={() => navigate("cart")}>
             <GrCart />
 
-            <span>4</span>
+            <span>{countProduct}</span>
           </div>
         </div>
       </div>

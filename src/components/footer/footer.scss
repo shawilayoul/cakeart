@@ -44,3 +44,53 @@
     padding: 1rem;
   }
 }
+//responsive mobile
+@media screen and (max-width: 600px) {
+  .footerContainer {
+    display: none;
+    width: 100vw;
+    margin-top: 2rem;
+    .footerTop {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: lightgray;
+      padding: 2rem 1rem;
+      .left {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .EmailIcon{
+          color: white;
+          background-color: orangered;
+          padding: 1rem;
+          border-radius: 50%;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+      .middle {
+        input {
+          padding: 10px 20px;
+          border-radius: 8px;
+        }
+      }
+      .right {
+          display: flex;
+          gap: 2rem;
+          cursor: pointer;
+          font-size: 24px;
+          color: blue;
+      }
+    }
+    .footerBottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      background-color: black;
+      color: white;
+      padding: 1rem;
+    }
+  }
+}

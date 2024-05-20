@@ -4,8 +4,11 @@ import { FaRegStar } from "react-icons/fa";
 import { shopData } from "../../constants/data";
 import { topsale } from "../../constants/data";
 import Button from "../../components/Button";
+import { useContext } from "react";
+import CakeContext from '../../contexts/CakeContexts'
 
 const Shop = () => {
+  const { updateCart} = useContext(CakeContext);
   return (
     <div className="shopContainer">
       <div className="shopImag">
@@ -96,7 +99,7 @@ const Shop = () => {
                   <div className="slideInfo">
                     <h3>{title}</h3>
                     <p>{price}</p>
-                    <button>Add To Cart</button>
+                    <button onClick={(e)=>updateCart(e)}>Add To Cart</button>
                   </div>
                 </div>
               );

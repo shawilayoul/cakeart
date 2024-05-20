@@ -1,4 +1,3 @@
-import React from 'react'
 import './home.scss'
 import HomeSlide from '../../feateurs/home/HomeSlide'
 import HomeMenu from '../../feateurs/home/HomeMenu'

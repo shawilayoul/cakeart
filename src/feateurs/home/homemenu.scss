@@ -15,6 +15,7 @@
   .slideItems {
     border: 1px solid gray;
     border-radius: 6px;
+    width: 100%;
     .slideImg {
       img {
         width: 100%;
@@ -45,6 +46,67 @@
         &:hover {
           background-color: orangered;
           color: white;
+        }
+      }
+    }
+  }
+}
+
+///mobile responsive
+
+// responsive mobil
+@media screen and (max-width: 600px) {
+  .menuContainer {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    div{
+      h2{
+        margin-top: 1rem;
+        color: orangered;
+        font-size: 20px;
+        text-transform: capitalize;
+      }
+    }
+    .slideItems {
+      border: 1px solid gray;
+      border-radius: 6px;
+      width: 100%;
+      .slideImg {
+        img {
+          width: 100%;
+          height: 200px;
+          border-radius: 6px;
+          &:hover {
+            opacity: 0.6;
+            cursor: pointer;
+          }
+        }
+      }
+      .slideInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        h3 {
+          color: orangered;
+          margin: 0;
+          font-size: 16px;
+        }
+        button {
+          padding: 8px 20px;
+          background-color: inherit;
+          border-radius: 8px;
+          font-size: 12px;
+          border: 1px solid orangered;
+          cursor: pointer;
+          &:hover {
+            background-color: orangered;
+            color: white;
+          }
         }
       }
     }

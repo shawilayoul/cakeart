@@ -19,7 +19,7 @@
   }
   .recipeSearch {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 13%;
     width: 70vw;
     height: 20vh;
@@ -91,8 +91,8 @@
         .recipeImg {
           margin-bottom: 2rem;
           img {
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 250px;
             border-radius: 8px;
             cursor: pointer;
             &:hover {
@@ -101,13 +101,13 @@
           }
           div {
             position: absolute;
-            top: 10.5rem;
+            top: 14.5rem;
             color: goldenrod;
             background-color: white;
             border: 1px solid gray;
             border-radius: 6px;
             padding: 8px 20px;
-            left: 3rem;
+            left: 4rem;
             cursor: pointer;
           }
         }
