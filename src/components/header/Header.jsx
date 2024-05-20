@@ -1,13 +1,13 @@
-import { FaCartShopping } from "react-icons/fa6";
+import { GrCart } from "react-icons/gr";
 import { FaSearch } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import "./header.scss";
 const Header = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <nav className="headerContainer">
       <div className="logo">
-        <h2 onClick={()=>navigate('/')}>
+        <h2 onClick={() => navigate("/")}>
           Silver <span>Cake</span>
         </h2>
       </div>
@@ -30,7 +30,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="shop" className="text-link">
+              <Link to="cart/shop" className="text-link">
                 Shop
               </Link>
             </li>
@@ -50,8 +50,10 @@ const Header = () => {
           <div className="searchBar">
             <FaSearch />
           </div>
-          <div className="cart" onClick={()=>navigate('cart')}>
-            <FaCartShopping />
+          <div className="cart" onClick={() => navigate("cart")}>
+            <GrCart />
+
+            <span>4</span>
           </div>
         </div>
       </div>

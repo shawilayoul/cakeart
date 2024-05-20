@@ -35,7 +35,7 @@ const HomeRecipe = () => {
         })}
       </div>
       <div className="btnview">
-        <button>View All</button>
+        <button onClick={()=>navigate('recipes')}>View All</button>
       </div>
       <div className="clientContainer">
         <h3>What client's say?</h3>

@@ -31,10 +31,10 @@
           text-transform: uppercase;
           list-style: none;
           cursor: pointer;
-          .text-link{
+          .text-link {
             text-decoration: none;
           }
-          &:hover{
+          &:hover {
             color: orangered;
           }
         }
@@ -45,6 +45,21 @@
       align-items: center;
       cursor: pointer;
       gap: 2rem;
+      .cart {
+        position: relative;
+        span {
+          background-color: orangered;
+          position: absolute;
+          color: white;
+          padding: 3px;
+          text-align: center;
+          width: 15px;
+          border-radius: 50%;
+          top: -20px;
+          right: -12px;
+          font-weight: bold;
+        }
+      }
     }
   }
 }

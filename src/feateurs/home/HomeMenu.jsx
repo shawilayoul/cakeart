@@ -28,7 +28,7 @@ const HomeMenu = () => {
             return (
               <SplideSlide>
                 <div className="slideItems">
-                  <div className="slideImg" onClick={()=>navigate(`singlMenu/${id}`)}>
+                  <div className="slideImg" onClick={()=>navigate(`MenuDetail/${id}`)}>
                     <img src={image} alt="" />
                   </div>
                   <div className="slideInfo">

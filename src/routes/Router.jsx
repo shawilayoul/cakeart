@@ -7,9 +7,9 @@ import Recipes from "../pages/recipes/Recipes";
 import Blog from "../pages/blog/Blog";
 import Shop from "../pages/shop/Shop";
 import Cart from "../components/cart/Cart";
-import SigleMenu from "../feateurs/home/SigleMenu";
 import RecipeDetail from "../pages/recipes/RecipeDetail";
 import HomeRecipeDetail from "../feateurs/home/HomeRecipeDetail";
+import MenuDetail from "../feateurs/home/MenuDetail";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
         element: <Recipes/>,
       },
       {
-        path:"shop",
+        path:"cart/shop",
         element:<Shop/>
       },
       {
@@ -41,8 +41,8 @@ const router = createBrowserRouter([
         element: <Cart/>,
       },
       {
-        path: "singlMenu/:id",
-        element: <SigleMenu/>,
+        path: "MenuDetail/:id",
+        element: <MenuDetail/>,
       },
       {
         path:'recipeDetaill/:id',
