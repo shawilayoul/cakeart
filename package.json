@@ -1,9 +1,12 @@
 {
+  "homepage":"http://shawilayoul.github.io/SliverCake",
   "name": "cakeart",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -12,6 +15,7 @@
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.35",
     "@splidejs/react-splide": "^0.7.12",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.2.0",
