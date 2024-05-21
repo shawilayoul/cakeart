@@ -28,8 +28,8 @@ const HomeMenu = () => {
         >
           {homeMenuData.map(({ id, image, title, price }) => {
             return (
-              <SplideSlide>
-                <div className="slideItems">
+              <SplideSlide key={id}>
+                <div className="slideItems" key={id}>
                   <div
                     className="slideImg"
                     onClick={() => navigate(`MenuDetail/${id}`)}

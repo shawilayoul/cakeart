@@ -117,22 +117,22 @@ export const homeRecipe = [
     title: "Tartufo Di Pizza",
   },
   {
-    id: 1,
+    id: 5,
     image: images.cake6j,
     title: "Sachertorte",
   },
   {
-    id: 2,
+    id: 6,
     image: images.cake5j,
     title: "Tiramisu",
   },
   {
-    id: 3,
+    id: 7,
     image: images.cake2j,
     title: "Dessert Cake",
   },
   {
-    id: 4,
+    id: 8,
     image: images.cake4j,
     title: "Tartufo Di Pizza",
   },

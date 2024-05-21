@@ -21,7 +21,7 @@ const HomeSlide = () => {
         >
           {slideData.map(({ id, image, title, description }) => {
             return (
-              <SplideSlide>
+              <SplideSlide key={id}> 
                 <div className="slideItems" key={id}>
                   <div className="silder">
                     <div className="left">
