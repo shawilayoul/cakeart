@@ -10,6 +10,9 @@
   padding: 0;
   z-index: 2;
   border-bottom: 0.2px dashed orangered;
+  .appbar{
+    display: none;
+  }
   .logo {
     h2 {
       text-decoration: wavy;
@@ -69,33 +72,24 @@
 // responsive mobil
 @media screen and (max-width: 600px) {
   .headerContainer {
-    position: fixed;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100vw;
-    height: 60px;
-    margin: 0;
-    padding: 0;
-    z-index: 2;
-    border-bottom: 0.2px dashed orangered;
+  
+    .appbar{
+      display: block;
+      font-size: 30px;
+      cursor: pointer;
+    }
     .logo {
       h2 {
         text-decoration: wavy;
         text-transform: uppercase;
         font-size: 20px;
-        cursor: pointer;
-        span {
-          color: orangered;
-        }
       }
     }
     .menu {
-      display: none;
-      align-items: center;
-      gap: 2rem;
+      display: flex;
+      gap: 1rem;
       .menuLeft {
+        display: none;
         ul {
           display: flex;
           align-items: center;
