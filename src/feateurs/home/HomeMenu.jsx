@@ -21,7 +21,7 @@ const HomeMenu = () => {
             gap: "1rem",
             autoplay: false,
             rewind: true,
-            perPage: 4,
+            perPage: 5,
             width:1100,
           }}
           aria-label="My Favorite Images"

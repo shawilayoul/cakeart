@@ -105,50 +105,33 @@
 
 @media screen and (max-width: 600px) {
   .container {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
     h2{
-      color: orangered;
       margin-top: 1rem;
-      font-size: 18px;
-      text-transform: capitalize;
+      font-size: 20px;
     }
     .RecipeContainer {
       display: grid;
       grid-template-columns: auto  auto;
       grid-gap: 1rem;
       .recipeItems {
-        position: relative;
         .recipeImg {
-          margin-bottom: 2rem;
+          margin-bottom: 1rem;
           img {
-            width: 200px;
+            width: 180px;
             height: 200px;
-            border-radius: 8px;
-            cursor: pointer;
-            &:hover {
-              opacity: 0.6;
-            }
+            border-radius: 6px;
           }
           p {
-            top: 10rem;     
+            top: 10rem;   
+            padding: 5px 10px;  
           }
         }
         .slideInfo {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 2px;
+
+          gap: 1px;
           p {
             margin: 0;
             font-size: 14px;
-            span {
-              color: orangered;
-            }
           }
         }
       }
@@ -169,7 +152,6 @@
           flex-direction: column;
           padding: 10px;
           width: 200px;
-          height: 200px;
           .clientImg {
             img {
               width: 70px;
