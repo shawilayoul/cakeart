@@ -1,5 +1,6 @@
 import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import images from "../../assets/images";
 import "./footer.scss";
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="left">
           <div className="EmailIcon">
             <a>
-                <MdEmail />
+              <MdEmail />
             </a>
           </div>
           <div className="iconIno">
@@ -57,12 +58,16 @@ const Footer = () => {
         <div className="blog">
           <h3>From The Blog</h3>
           <div className="blog1">
-            <p>blog image</p>
+      
+              <img src={images.blog1} alt="" />
+          
             <p>Snack Cake</p>
             <p>jan 01, 2016</p>
           </div>
           <div className="blog1">
-            <p>blog image</p>
+            
+              <img src={images.blog2} alt="" />
+            
             <p>Snack Cake</p>
             <p>jan 01, 2016</p>
           </div>

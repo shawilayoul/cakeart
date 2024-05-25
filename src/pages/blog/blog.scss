@@ -29,7 +29,7 @@
         .blogImg{
             width: 50vw;
             img{
-                width: 500px;
+                width: 600px;
                 height: 350px;
             }
         }
@@ -37,6 +37,19 @@
             width: 50vw; 
             h4{
                 color: orangered;
+            }
+        }
+    }
+}
+/*Mode mobile*/
+@media screen and (max-width: 600px) {
+    .blogContainer{
+        .blogBottom{
+            .blogImg{
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
             }
         }
     }

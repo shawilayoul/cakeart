@@ -141,7 +141,7 @@ export const homeRecipe = [
 export const blogData = [
   {
     id: 1,
-    image: images.cake1j,
+    image: images.blog1,
     title: "Snack Cake",
     subTitle: "By Thang On Cream Category, Ice, Summer Cake",
     description:
@@ -149,7 +149,7 @@ export const blogData = [
   },
   {
     id: 2,
-    image: images.cake2j,
+    image: images.blog2,
     title: "Banana Split Ice Cream Cake",
     subTitle: "By Thang On Cream Category, Ice, Summer Cake",
     description:
@@ -157,7 +157,7 @@ export const blogData = [
   },
   {
     id: 3,
-    image: images.cake3j,
+    image: images.blog3,
     title: "Summer Peach Cake",
     subTitle: "By Thang On Cream Category",
     description:
@@ -170,22 +170,6 @@ export const blogData = [
     subTitle: "By Thang On Cream Category, Summer Cake",
     description:
       "Today ends our weeklong of cakes made with America’s favorite dessertand, of course, we saved the best for last. This ice cream cake is dedicated to the most delicious duo …",
-  },
-  {
-    id: 5,
-    image: images.cake3j,
-    title: "Chocolate Cake for Two",
-    subTitle: "By Thang On Socolaa",
-    description:
-      "We found today’s cake on Zoe Bakes. It’s run by Zoë François, and, well, she knows how to bake!François has authored two best-selling bread books, The New Artisan Bread in Five …",
-  },
-  {
-    id: 6,
-    image: images.cake1j,
-    title: "Snack Cake",
-    subTitle: "By Thang On Ice, Matcha",
-    description:
-      "When I was a kid, I daydreamed that I’d come home from school and, magically, my mom would turn into one  of those mothers who would be lavishly frosting a …",
   },
 ];
 //recipe page data

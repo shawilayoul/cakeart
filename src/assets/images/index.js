@@ -25,6 +25,9 @@ import menu6 from './menu6.jpg'
 import iconbox1 from './iconbox1.webp'
 import iconbox2 from './iconbox2.webp'
 import iconbox3 from './iconbox3.webp'
+import blog1 from '../blog1.webp'
+import blog2 from '../blog2.webp'
+import blog3 from '../blog3.webp'
 
 const images = {
     cake1,
@@ -53,7 +56,10 @@ const images = {
     menu6,
     iconbox1,
     iconbox2,
-    iconbox3
+    iconbox3,
+    blog1,
+    blog2,
+    blog3
 }
 
 export default images

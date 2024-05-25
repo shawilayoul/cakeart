@@ -73,17 +73,6 @@ const HomeRecipe = () => {
             </p>
             <h4>Ali</h4>
           </div>
-          <div className="clientiInfo">
-            <div className="clientImg">
-              <img src={images.person3} alt="" />
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur non fuga commodi repellat
-              voluptates, quam at asperiores voluptate repellat distinctio
-              impedit?
-            </p>
-            <h4>Ali</h4>
-          </div>
         </div>
       </div>
     </div>
