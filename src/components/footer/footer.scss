@@ -1,5 +1,5 @@
 .footerContainer {
-  width: 100vw;
+  width: 100%;
   margin-top: 2rem;
   .footerTop {
     width: 100%;
@@ -58,7 +58,7 @@
 //responsive tablete
 @media screen and (max-width: 900px) {
   .footerContainer {
-    width: 100vw;
+    width: 100%;
     margin-top: 2rem;
     .footerTop {
       width: 100%;

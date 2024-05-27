@@ -1,5 +1,5 @@
 .singlMenuContainer {
-  width: 100vw;
+  width: 100%;
   .singlMTop {
     position: relative;
     img {
@@ -18,7 +18,7 @@
     }
   }
   .menuItems {
-    width: 80vw;
+    width: 80%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
