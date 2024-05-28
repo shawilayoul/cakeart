@@ -59,26 +59,6 @@ const About = () => {
         </div>
         <div className="bottom">
           <div className="staffImag">
-            <img src={images.person1} alt="" />
-            <p>Linda Sara</p>
-            <p>Art Derector</p>
-          </div>
-          <div className="staffImag">
-            <img src={images.person5} alt="" />
-            <p>Linda Sara</p>
-            <p>Art Derector</p>
-          </div>
-          <div className="staffImag">
-            <img src={images.person2} alt="" />
-            <p>Linda Sara</p>
-            <p>Art Derector</p>
-          </div>
-          <div className="staffImag">
-            <img src={images.person1} alt="" />
-            <p>Linda Sara</p>
-            <p>Art Derector</p>
-          </div>
-          <div className="staffImag">
             <img src={images.person4} alt="" />
             <p>Linda Sara</p>
             <p>Art Derector</p>

@@ -1,5 +1,5 @@
 .contactContainer{
-    width: 100vw;
+    width: 100%;
     .contactTop{
         position: relative;
         img{
@@ -7,7 +7,7 @@
             height: 60vh;
         }
         .title{
-            top: 40%;
+            top: 50%;
             left: 50%;
             position: absolute;
            h2{
@@ -26,6 +26,10 @@
             flex-direction: column;
             align-items: center;
             gap: 1rem;
+            h3{
+                font-size: 25px;
+                color: orangered;
+            }
             .contactInfo{
                 display: flex;
                 flex-direction: column;
@@ -35,10 +39,11 @@
         .right{
             h3{
                 margin: 0;
+                font-size: 25px;
+                color: orangered;
             }
             p{
             margin: 5px;
-            font-size: 15px;
             }
             .formContact{
                 display: flex;
@@ -47,14 +52,14 @@
                 margin-top: 2rem;
                 .inputfield input, textarea{
                     width: 400px;
-                    padding: 5px 20px;
+                    padding: 10px 20px;
                     border-radius: 6px;
-                    border: none;
+                    border: 1px solid gray ;
                 }
                 button{
                     background-color: orangered;
                     color: white;
-                    padding: 5px 20px;
+                    padding: 10px 20px;
                     border-radius: 6px;
                     border: none;
                     cursor: pointer;
@@ -63,7 +68,75 @@
         }
     }
     .map{
-        width: 100vw;
+        width: 100%;
         margin-top: 2rem;
     }
+}
+
+// reponsive tablte
+@media screen and (max-width: 900px) {
+    .contactContainer{
+        .contactTop{
+            .title{
+                left: 40%;
+               h2{
+                color: orangered;
+                font-size: 25px;
+               }
+            }
+        }
+        .formContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         
+            .left{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0rem;
+                h3{
+                    font-size: 25px;
+                    color: orangered;
+                }
+                .contactInfo{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+            .right{
+                h3{
+                    text-align: center;
+                    color: orangered;
+                    margin: 0;
+                    font-size: 25px;
+                }
+                p{
+                margin: 5px;
+                }
+                .formContact{
+                    .inputfield input, textarea{
+                        width: 400px;
+                        padding: 10px 20px;
+                        border-radius: 6px;
+                        border: none;
+                    }
+                    button{
+                        background-color: orangered;
+                        color: white;
+                        padding: 10px 20px;
+                        border-radius: 6px;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .map{
+            width: 100%;
+            margin-top: 2rem;
+        }
+    }
+    
 }

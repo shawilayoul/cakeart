@@ -1,5 +1,5 @@
 import images from "../../assets/images";
-import { FaMapMarkerAlt ,FaRegClock } from "react-icons/fa";
+import { FaMapMarkerAlt, FaRegClock } from "react-icons/fa";
 
 import "./contact.scss";
 
@@ -31,12 +31,19 @@ const Contact = () => {
             <p>329 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
           </div>
           <div className="contactInfo">
-            <p><FaRegClock /></p>
+            <p>
+              <FaRegClock />
+            </p>
             <p>Opening Hour 8:00 AM – 10:00 PM</p> <p>Monday – Sunday</p>
           </div>
           <div className="contactInfo">
-            <p>Call. +00 123 456 789 </p>
-            <p>E-mail. hello@cakeart.com</p>
+            <p>
+              Call: <span style={{ color: "orangered" }}> +33 82 37 11 77</span>{" "}
+            </p>
+            <p>
+              E-mail:{" "}
+              <span style={{ color: "orangered" }}>aocholayoul9@gmail.com</span>{" "}
+            </p>
           </div>
         </div>
         <div className="right">
