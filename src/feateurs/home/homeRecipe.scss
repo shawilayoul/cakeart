@@ -36,7 +36,7 @@
           border: 1px solid gray;
           border-radius: 6px;
           padding: 8px 20px;
-          left: 3rem;
+          left: 4rem;
           cursor: pointer;
         }
       }
@@ -123,7 +123,8 @@
           }
           p {
             top: 10.5rem;   
-            padding: 5px 10px;  
+            padding: 5px 10px; 
+            left: 3rem; 
           }
         }
         .slideInfo {
@@ -136,13 +137,9 @@
         }
       }
     }
-    .btnview {
-      button {
-        width: 10rem;
-      }
-    }
+  
     .clientContainer {
-      width: 100vw;
+      width: 100%;
       gap: 1rem;
       .clientsOpinion {
         display: flex;
@@ -207,7 +204,6 @@
       }
     }
     .clientContainer {
-      width: 100vw;
       gap: 1rem;
       .clientsOpinion {
         display: flex;

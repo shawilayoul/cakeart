@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100vw;
+  width: 100%;
   height: 60px;
   margin: 0;
   z-index: 2;
@@ -62,7 +62,7 @@
           width: 15px;
           border-radius: 50%;
           top: -20px;
-          right: -12px;
+          right: -5px;
           font-weight: bold;
         }
       }
@@ -112,8 +112,6 @@
     }
     .logo {
       h2 {
-        text-decoration: wavy;
-        text-transform: uppercase;
         font-size: 20px;
       }
     }
@@ -140,25 +138,7 @@
         }
       }
       .menuRight {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        gap: 1rem;
-        .cart {
-          position: relative;
-          span {
-            background-color: orangered;
-            position: absolute;
-            color: white;
-            padding: 3px;
-            text-align: center;
-            width: 15px;
-            border-radius: 50%;
-            top: -20px;
-            right: -12px;
-            font-weight: bold;
-          }
-        }
+        gap: 0.8rem;
       }
     }
   }
@@ -167,6 +147,8 @@
 // responsive mobil
 @media screen and (max-width: 600px) {
   .headerContainer {
+    width: 97%;
+    padding-right: 2rem;
     .appbar {
       display: block;
       font-size: 30px;

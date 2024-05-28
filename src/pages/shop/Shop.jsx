@@ -1,14 +1,14 @@
-import images from "../../assets/images";
 import "./shop.scss";
+import images from "../../assets/images";
 import { FaRegStar } from "react-icons/fa";
 import { shopData } from "../../constants/data";
 import { topsale } from "../../constants/data";
 import Button from "../../components/Button";
 import { useContext } from "react";
-import CakeContext from '../../contexts/CakeContexts'
+import CakeContext from "../../contexts/CakeContexts";
 
 const Shop = () => {
-  const { updateCart} = useContext(CakeContext);
+  const { updateCart } = useContext(CakeContext);
   return (
     <div className="shopContainer">
       <div className="shopImag">
@@ -92,14 +92,14 @@ const Shop = () => {
           <div className="shopMenus">
             {shopData.map(({ id, title, image, price }) => {
               return (
-                <div className="slideItems">
+                <div className="slideItems" key={id}>
                   <div className="slideImg">
                     <img src={image} alt="slideimag" />
                   </div>
                   <div className="slideInfo">
                     <h3>{title}</h3>
-                    <p>{price}</p>
-                    <button onClick={(e)=>updateCart(e)}>Add To Cart</button>
+                    <p>$ {price}</p>
+                    <button onClick={(e) => updateCart(e)}>Add To Cart</button>
                   </div>
                 </div>
               );
