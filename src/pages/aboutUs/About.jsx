@@ -23,15 +23,6 @@ const About = () => {
             dolorem unde culpa nobis illum voluptate! Soluta autem voluptatum
             nesciunt, temporibus sequi ullam corrupti aut illo!
           </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sint
-            odit vero animi exercitationem, aut id iure unde porro rem
-            necessitatibus, ratione quasi architecto quam beatae quibusdam, quos
-            voluptate repellendus. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Inventore cumque laudantium corporis beatae minus
-            dolorem unde culpa nobis illum voluptate! Soluta autem voluptatum
-            nesciunt, temporibus sequi ullam corrupti aut illo!
-          </p>
         </div>
       </div>
       <div className="ourChiffre">

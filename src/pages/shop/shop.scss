@@ -2,7 +2,7 @@
   width: 100%;
   .shopImag {
     position: relative;
-    width: 100vw;
+    width: 100%;
     img {
       width: 100%;
       height: 60vh;
@@ -166,14 +166,14 @@
           margin-bottom: 1.5rem;
           color: orangered;
         }
-        .btnProduct button{
-          border:  1px solid black;
+        .btnProduct button {
+          border: 1px solid black;
           background-color: lightslategrey;
           width: 100%;
           color: white;
         }
         .filterPrice {
-          h3{
+          h3 {
             color: orangered;
           }
           .intput-range {
@@ -188,7 +188,7 @@
           }
         }
         .topSale {
-          h3{
+          h3 {
             color: orangered;
           }
           .topSaleProduct {
@@ -358,7 +358,7 @@
                             color: orangered;
                             margin: 0;
                           }
-                          p{
+                          p {
                             margin: 0;
                           }
                           button {
@@ -386,6 +386,112 @@
                   color: white;
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/** Tablete responsive **/
+@media screen and (max-width: 600px) {
+  .shopContainer {
+    width: 100%;
+    .shopImag {
+      .title {
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+    .shopElements {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 87%;
+      padding: 2rem;
+      .sideBar {
+        width: 100%;
+        .searchBar {
+          margin-bottom: 1rem;
+          input {
+            padding: 6px 18px;
+            border-radius: 8px;
+          }
+        }
+        h2 {
+          font-size: 18px;
+          margin-bottom: 1.5rem;
+          color: orangered;
+        }
+        .btnProduct button {
+          border: 1px solid black;
+          background-color: lightslategrey;
+          width: 100%;
+          color: white;
+        }
+        .filterPrice {
+          h3 {
+            color: orangered;
+          }
+          .intput-range {
+            width: 15rem;
+            color: orangered;
+            background-color: orangered;
+          }
+          .price {
+            display: flex;
+            align-items: center;
+            gap: 7.5rem;
+          }
+        }
+        .topSale {
+          h3 {
+            color: orangered;
+          }
+          .topSaleProduct {
+            margin-top: 1rem;
+            img {
+              width: 180px;
+            }
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+          }
+        }
+      }
+      .shopMenuContainer {
+        width:100%;
+        .sortBar {
+          width: 85%;
+          .right {
+            display: flex;
+            gap: 1rem;
+            select {
+              border: none;
+              background-color: inherit;
+              width: 8rem;
+            }
+          }
+        }
+        .shopMenus {
+          width: 90%;
+          display: grid;
+          grid-template-columns:  auto auto;
+          .slideItems {
+            .slideImg {
+              img {
+                width: 180px;
+                height: 170px;
+                border-radius: 6px;
+              }
+            }
+            .slideInfo {
+              h3 {
+                font-size: 15x;
+                margin: 0;
+              }
+
             }
           }
         }

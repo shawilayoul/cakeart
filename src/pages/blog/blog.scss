@@ -27,14 +27,14 @@
         gap: 1rem;
         margin-top: 1rem;
         .blogImg{
-            width: 50vw;
+            width: 50%;
             img{
                 width: 600px;
                 height: 350px;
             }
         }
         .blogInfo{
-            width: 50vw; 
+            width: 50%; 
             h4{
                 color: orangered;
             }
@@ -71,7 +71,6 @@
 @media screen and (max-width: 600px) {
     .blogContainer{
         .blogTop{
-           
             .title{
                 top: 50%;
                h2{
@@ -81,11 +80,11 @@
             }
         }
         .blogBottom{
-            justify-content: center;
+            width: 100%;
             .blogImg{
                 img{
-                    width: 300px;
-                    height: 300px;
+                    width: 250px;
+                    height: 200px;
                 }
             }
         }

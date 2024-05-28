@@ -19,8 +19,8 @@ const Contact = () => {
             <p>Icon</p>
             <p>
               {" "}
-              We are also active in social media. You can find us on below
-              adresses..
+              We are also active in social media. <br /> You can find us on
+              below adresses..
             </p>
             <p>Icon gose here</p>
           </div>
@@ -28,7 +28,7 @@ const Contact = () => {
             <p>
               <FaMapMarkerAlt />{" "}
             </p>
-            <p>329 Queensberry Street, North Melbourne VIC 3051, Australia.</p>
+            <p>329 Queensberry Street, North Melbourne VIC 3051,  Australia.</p>
           </div>
           <div className="contactInfo">
             <p>

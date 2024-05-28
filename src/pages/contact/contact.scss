@@ -120,12 +120,61 @@
                         width: 400px;
                         padding: 10px 20px;
                         border-radius: 6px;
-                        border: none;
+                    }
+                  
+                }
+            }
+        }
+        .map{
+            width: 100%;
+            margin-top: 2rem;
+        }
+    }
+    
+}
+
+// reponsive mobile
+@media screen and (max-width: 600px) {
+    .contactContainer{
+        .contactTop{
+            .title{
+                left: 40%;
+               h2{
+                font-size: 20px;
+               }
+            }
+        }
+        .formContainer{
+            .left{
+                h3{
+                    font-size: 20px;
+                    color: orangered;
+                }
+                .contactInfo{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+            .right{
+                h3{
+                    text-align: center;
+                    color: orangered;
+                    margin: 0;
+                    font-size: 20px;
+                }
+                p{
+                margin: 5px;
+                }
+                .formContact{
+                    .inputfield input, textarea{
+                        width: 350px;
                     }
                     button{
                         background-color: orangered;
                         color: white;
-                        padding: 10px 20px;
+                        width: 390px;
+                        padding: 10px 10px;
                         border-radius: 6px;
                         border: none;
                         cursor: pointer;

@@ -75,7 +75,7 @@ const Shop = () => {
         <div className="shopMenuContainer">
           <div className="sortBar">
             <div className="left">
-              <p>Showing 1–12 of 23 results</p>
+              <p>Showing 12 of 23 results</p>
             </div>
             <div className="right">
               <p>SortBy:</p>
