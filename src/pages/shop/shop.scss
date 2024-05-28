@@ -463,7 +463,7 @@
       .shopMenuContainer {
         width:100%;
         .sortBar {
-          width: 85%;
+          width: 100%;
           .right {
             display: flex;
             gap: 1rem;
@@ -477,12 +477,12 @@
         .shopMenus {
           width: 90%;
           display: grid;
-          grid-template-columns:  auto auto;
+          grid-template-columns: auto;
           .slideItems {
             .slideImg {
               img {
-                width: 180px;
-                height: 170px;
+                width: 260px;
+                height: 180px;
                 border-radius: 6px;
               }
             }
