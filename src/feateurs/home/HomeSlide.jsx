@@ -1,8 +1,12 @@
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
+import "./homeSlide.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css";
 import images from "../../assets/images";
 import { slideData } from "../../constants/data";
-import "./homeSlide.scss";
 import { useNavigate } from "react-router-dom";
 const HomeSlide = () => {
   const navigate = useNavigate();
@@ -10,12 +14,19 @@ const HomeSlide = () => {
   return (
     <div className="container">
       <div className="slide-container">
-        <Slide
+        <Swiper
+          modules={[Navigation, Pagination, A11y]}
+          spaceBetween={300}
+          slidesPerView={1}
+          navigation={true}
+          loop={true}
+          pagination={{ clickable: true }}
         >
           {slideData.map(({ id, image, title, description }) => {
             return (
-                <div className="slideItems" key={id}>
-                  <div className="silder">
+              <SwiperSlide>
+                <div className="slideItems">
+                  <div className="silder"  key={id}>
                     <div className="left">
                       <img src={image} alt="" />
                     </div>
@@ -31,10 +42,10 @@ const HomeSlide = () => {
                     </div>
                   </div>
                 </div>
-            
+              </SwiperSlide>
             );
           })}
-        </Slide>
+        </Swiper>
       </div>
       <div className="ourSections">
         <div className="items">

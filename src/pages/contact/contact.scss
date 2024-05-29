@@ -167,13 +167,15 @@
                 margin: 5px;
                 }
                 .formContact{
+                    display: flex;
+                    align-items: center;
                     .inputfield input, textarea{
-                        width: 350px;
+                        width: 250px;
                     }
                     button{
                         background-color: orangered;
                         color: white;
-                        width: 390px;
+                        width: 300px;
                         padding: 10px 10px;
                         border-radius: 6px;
                         border: none;
@@ -183,8 +185,10 @@
             }
         }
         .map{
-            width: 100%;
+            text-align: center;
+            width: 90%;
             margin-top: 2rem;
+            margin-left: 1.5em;
         }
     }
     

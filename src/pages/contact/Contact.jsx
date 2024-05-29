@@ -28,7 +28,10 @@ const Contact = () => {
             <p>
               <FaMapMarkerAlt />{" "}
             </p>
-            <p>329 Queensberry Street, North Melbourne VIC 3051,  Australia.</p>
+            <p>
+              329 Queensberry Street, <br /> North Melbourne VIC 3051,
+              Australia.
+            </p>
           </div>
           <div className="contactInfo">
             <p>
