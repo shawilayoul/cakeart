@@ -30,9 +30,9 @@ const Footer = () => {
         <div className="about">
           <h3>ABOUT US</h3>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit <br />{" "}
+            Sed ut perspiciatis unde omnis iste natus error sit 
             voluptatem accusantium doloremque laudantium, totam rem aperiam,{" "}
-            <br /> eaque ipsa quae ab illo inventore veritatis.
+            eaque ipsa quae ab illo inventore veritatis.
           </p>
           <div className="phonEmail">
             <p>Phone: +33785433587</p>

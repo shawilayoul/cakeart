@@ -8,6 +8,7 @@ import CakeContext from "../../contexts/CakeContexts";
 import "./header.scss";
 const Header = () => {
   const [showBar, setShowBar] = useState(false);
+  const [searchBar, setSearchBar] = useState(false);
   const navigate = useNavigate();
   const { countProduct } = useContext(CakeContext);
   const menu = [
@@ -86,7 +87,14 @@ const Header = () => {
         </div>
         <div className="menuRight">
           <div className="searchBar">
-            <FaSearch />
+            <FaSearch onClick={()=>setSearchBar(!searchBar)} />
+            {
+              searchBar &&
+              <div className="searchModel">
+              <input type="text" placeholder="search for rrecipe" />
+            </div>
+            }
+          
           </div>
           <div className="cart" onClick={() => navigate("cart")}>
             <GrCart />

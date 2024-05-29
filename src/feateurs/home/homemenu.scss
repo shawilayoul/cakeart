@@ -11,7 +11,7 @@
       margin-bottom: 1rem;
       color: orangered;
       font-size: 30px;
-      text-transform: capitalize;
+      text-transform: uppercase;
     }
   }
   .menu {
@@ -101,11 +101,11 @@
       }
     }
     .menu {
-      grid-template-columns: auto auto;
+      grid-template-columns: auto;
       .slideItems {
         .slideImg {
           img {
-            width: 180px;
+            width: 250px;
             height: 170px;
           }
         }
@@ -113,7 +113,7 @@
           padding: 0.5rem;
           h3 {
             margin: 0;
-            font-size: 16px;
+            font-size: 20px;
           }
           button {
             padding: 8px 20px;

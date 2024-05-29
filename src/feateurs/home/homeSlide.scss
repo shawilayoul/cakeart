@@ -96,22 +96,30 @@
     .slideItems {
       justify-content: center;
       .silder {
+        position: relative;
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
         .left {
           img {
-            width: 450px;
-            height: 300px;
+            width: 500px;
+            height: 350px;
+            opacity: 0.6;
           }
         }
         .midile {
+          position:absolute;
           h2 {
-            font-size: 20px;
+            color: black;
+            font-size: 24px;
           }
           p {
             display: none;
             font-size: 16px;
+          }
+          button{
+            background-color: orangered;
+            color: white;
           }
          
         }
@@ -147,28 +155,32 @@
 
 @media screen and (max-width: 600px) {
   .slide-container {
-    height: 80vh;
+    height: 70vh;
     .slideItems {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       .silder {
+        position: relative;
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 1rem;
+        gap: 0.5rem;
         .left {
           img {
             border-radius: 8px;
-            width: 300px;
+            width: 380px;
             height: 300px;
+            opacity: 0.6;
           }
         }
         .midile {
+          position: absolute;
           gap: 1rem;
           h2 {
-            font-size: 18px;
+            font-size: 20px;
+            color: black;
           }
           p {
             display: none;
@@ -177,6 +189,8 @@
             padding: 10px  20px;
             border-radius: 5px;
             font-size: 12px;
+            background-color: orangered;
+            color: white;
           }
         }
         .right {

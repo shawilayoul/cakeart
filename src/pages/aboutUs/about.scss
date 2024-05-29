@@ -154,13 +154,12 @@
       }
     }
     .aboutHistory {
-      flex-wrap: wrap;
       gap: 1.5rem;
       padding: 1rem;
-      align-items: center;
+      flex-direction: column;
       .left {
         img {
-          width: 180px;
+          width: 280px;
           height: 300px;
         }
       }
@@ -191,15 +190,16 @@
       }
       .bottom {
         display: grid;
-        grid-template-columns:  auto auto;
+        grid-template-columns:  auto;
         .staffImag {
           img {
-            width: 180px;
+            width: 250px;
             height: 190x;
           }
           p{
             margin: 0;
             margin-bottom: 5px;
+            text-align: center;
           }
         }
       }

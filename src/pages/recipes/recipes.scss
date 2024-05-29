@@ -225,10 +225,10 @@
     .recipeSearch {
       flex-direction: column;
       top: 40%;
-      width: 90%;
-      left: 1.5%;
+      width: 70%;
+      left: 11%;
       height: 40%;
-      padding: 1rem;
+      padding: 1rem 2rem;
       .searchElement {
         .searchOption {
           select {
@@ -264,27 +264,30 @@
         gap: 2rem;
         div &:hover {
           cursor: pointer;
-          color: orangered;
         }
       }
       .RecipeItemsContainer {
-        grid-template-columns: auto auto;
-        grid-gap: 1rem;
+        grid-template-columns:  auto;
+        grid-gap: 2rem;
         margin-top: 2rem;
         .recipeItems {
+          border: 1px solid gray;
+          border-radius: 8px;
           .recipeImg {
             margin-bottom: 2rem;
             img {
-              width: 170px;
-              height: 190px;
+              width: 280px;
+              height: 250px;
             }
             div {
-              top: 10.5rem;
-              left: 1.5rem;
+              top: 14.5rem;
+              left: 5.5rem;
             }
           }
           .slideInfo {
+            padding-bottom: 1rem;
             p {
+              text-align: center;
               margin: 0;
               font-size: 14px;
             }

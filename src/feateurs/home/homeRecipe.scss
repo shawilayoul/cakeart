@@ -9,7 +9,7 @@
     color: orangered;
     margin-top: 1rem;
     font-size: 30px;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
   .RecipeContainer {
     display: grid;
@@ -169,28 +169,31 @@
     h2{
       margin-top: 1rem;
       font-size: 20px;
+      text-transform: uppercase;
     }
     .RecipeContainer {
       display: grid;
-      grid-template-columns: auto  auto;
+      grid-template-columns: auto;
       grid-gap: 1rem;
       .recipeItems {
+        border: 1px solid gray;
+        border-radius: 6px;
         .recipeImg {
           margin-bottom: 1rem;
           img {
-            width: 170px;
-            height: 190px;
-            border-radius: 6px;
+            width: 250px;
+            height: 250px;
           }
           p {
-            top: 10rem;   
-            padding: 5px 10px;  
-            left: 2rem;
+            top: 13.5rem;   
+            padding: 8px 20px;  
+            left: 4.5rem;
           }
         }
         .slideInfo {
-
-          gap: 1px;
+          margin-top: 2rem;
+          padding: 1rem;
+          gap: 8px;
           p {
             margin: 0;
             font-size: 14px;
