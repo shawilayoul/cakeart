@@ -1,27 +1,19 @@
-import "@splidejs/react-splide/css/sea-green";
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
 import images from "../../assets/images";
 import { slideData } from "../../constants/data";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./homeSlide.scss";
 import { useNavigate } from "react-router-dom";
 const HomeSlide = () => {
   const navigate = useNavigate();
+
   return (
     <div className="container">
-      <div className="homeSlideContainer">
-        <Splide
-          options={{
-            type: "loop",
-            gap: "1rem",
-            autoplay: false,
-            rewind: false,
-            width: 1200,
-          }}
-          aria-labelledby="autoplay-example-heading"
+      <div className="slide-container">
+        <Slide
         >
           {slideData.map(({ id, image, title, description }) => {
             return (
-              <SplideSlide key={id}> 
                 <div className="slideItems" key={id}>
                   <div className="silder">
                     <div className="left">
@@ -39,10 +31,10 @@ const HomeSlide = () => {
                     </div>
                   </div>
                 </div>
-              </SplideSlide>
+            
             );
           })}
-        </Splide>
+        </Slide>
       </div>
       <div className="ourSections">
         <div className="items">

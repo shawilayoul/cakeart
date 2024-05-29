@@ -14,21 +14,10 @@ const HomeMenu = () => {
       <div>
         <h2 style={{ color: "red" }}>Our Menu</h2>
       </div>
-      <div>
-        <Splide
-          options={{
-            type: "loop",
-            gap: "1rem",
-            autoplay: false,
-            rewind: true,
-            perPage: 5,
-            width:1100,
-          }}
-          aria-label="My Favorite Images"
-        >
+      <div className="menu">
           {homeMenuData.map(({ id, image, title, price }) => {
             return (
-              <SplideSlide key={id}>
+           
                 <div className="slideItems" key={id}>
                   <div
                     className="slideImg"
@@ -42,10 +31,9 @@ const HomeMenu = () => {
                     <button onClick={(e) => updateCart(e)}>Add To Cart</button>
                   </div>
                 </div>
-              </SplideSlide>
+       
             );
           })}
-        </Splide>
       </div>
     </div>
   );
