@@ -49,11 +49,15 @@
         button {
           width: 13rem;
           padding: 8px 20px;
-          background-color: orangered;
-          color: white;
+          color:orangered;
+          border: 1px solid orangered;
+          background-color: inherit;
           cursor: pointer;
-          border: none;
           border-radius: 6px;
+          &:hover{
+           background-color: orangered;
+           color: white;
+          }
         }
       }
     }
@@ -225,24 +229,24 @@
     .recipeSearch {
       flex-direction: column;
       top: 40%;
-      width: 50%;
-      left: 17%;
+      width: 60%;
+      left: 16%;
       height: 40%;
       padding: 1rem 2rem;
       .searchElement {
         .searchOption {
           select {
-            width: 15rem;
+            width: 17rem;
           }
         }
         .searchInpt {
           input {
-            width: 12.5rem;
+            width: 14.5rem;
           }
         }
         .btnSearch {
           button {
-            width: 15rem;
+            width: 17rem;
           }
         }
       }
