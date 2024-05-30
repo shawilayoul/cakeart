@@ -225,24 +225,24 @@
     .recipeSearch {
       flex-direction: column;
       top: 40%;
-      width: 70%;
-      left: 11%;
+      width: 50%;
+      left: 17%;
       height: 40%;
       padding: 1rem 2rem;
       .searchElement {
         .searchOption {
           select {
-            width: 23rem;
+            width: 15rem;
           }
         }
         .searchInpt {
           input {
-            width: 20.5rem;
+            width: 12.5rem;
           }
         }
         .btnSearch {
           button {
-            width: 23rem;
+            width: 15rem;
           }
         }
       }
