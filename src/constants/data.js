@@ -141,7 +141,7 @@ export const homeRecipe = [
 export const blogData = [
   {
     id: 1,
-    image: images.blog1,
+    image: images.blog3,
     title: "Snack Cake",
     subTitle: "By Thang On Cream Category, Ice, Summer Cake",
     description:
