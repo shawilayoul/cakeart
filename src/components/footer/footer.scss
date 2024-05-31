@@ -11,7 +11,7 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-      .EmailIcon{
+      .EmailIcon {
         color: white;
         background-color: orangered;
         padding: 1rem;
@@ -27,11 +27,25 @@
       }
     }
     .right {
-        display: flex;
-        gap: 2rem;
-        cursor: pointer;
-        font-size: 24px;
-        color: blue;
+      display: flex;
+      gap: 2rem;
+      cursor: pointer;
+      font-size: 24px;
+      .facebook {
+        a {
+          color: blue;
+        }
+      }
+      .twitter {
+        a {
+          color: aqua;
+        }
+      }
+      .youtube {
+        a{
+          color: red;
+        }
+      }
     }
   }
   .footerBottom {
@@ -39,13 +53,34 @@
     justify-content: space-around;
     background-color: black;
     color: white;
-    padding: 1rem;
-    .blog{
-      h3{
+    padding: 2rem 1rem;
+    .about {
+      flex: 2;
+
+      h3 {
+        font-size: 20px;
+      }
+      .phonEmail {
+        p {
+          span {
+            color: orangered;
+          }
+        }
+      }
+    }
+    .links {
+      flex: 1;
+    }
+    .services {
+      flex: 1;
+    }
+    .blog {
+      flex: 1;
+      h3 {
         margin-bottom: 1rem;
       }
-      .blog1{
-        img{
+      .blog1 {
+        img {
           width: 150px;
           height: 70px;
         }
@@ -70,7 +105,7 @@
         display: flex;
         align-items: center;
         gap: 1rem;
-        .EmailIcon{
+        .EmailIcon {
           color: white;
           background-color: orangered;
           padding: 1rem;
@@ -86,11 +121,11 @@
         }
       }
       .right {
-          display: flex;
-          gap: 2rem;
-          cursor: pointer;
-          font-size: 24px;
-          color: blue;
+        display: flex;
+        gap: 2rem;
+        cursor: pointer;
+        font-size: 24px;
+        color: blue;
       }
     }
     .footerBottom {
@@ -101,15 +136,15 @@
       background-color: black;
       color: white;
       padding: 1rem;
-      .about{
+      .about {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-      .links{
+      .links {
         display: none;
       }
-      .blog{
+      .blog {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -134,7 +169,7 @@
         display: flex;
         align-items: center;
         gap: 1rem;
-        .EmailIcon{
+        .EmailIcon {
           color: white;
           background-color: orangered;
           padding: 1rem;
@@ -150,11 +185,11 @@
         }
       }
       .right {
-          display: flex;
-          gap: 2rem;
-          cursor: pointer;
-          font-size: 24px;
-          color: blue;
+        display: flex;
+        gap: 2rem;
+        cursor: pointer;
+        font-size: 24px;
+        color: blue;
       }
     }
     .footerBottom {
@@ -165,18 +200,18 @@
       background-color: black;
       color: white;
       padding: 1rem;
-      .about{
-        h3{
+      .about {
+        h3 {
           font-size: 18px;
         }
-        p{
+        p {
           text-align: center;
         }
       }
-      .links{
+      .links {
         display: none;
       }
-      .blog{
+      .blog {
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -70,7 +70,7 @@ const Header = () => {
       </div>
       <div className="logo">
         <h2 onClick={() => navigate("/")}>
-          Silver <span>Cake</span>
+          Cake<span>Art</span>
         </h2>
       </div>
       <div className="menu">

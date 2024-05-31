@@ -2,6 +2,9 @@ import { useParams } from "react-router-dom";
 import { RecipesData } from "../../constants/data";
 import images from "../../assets/images";
 import "./homeRecipeDetail.scss";
+import { FaRegStar } from "react-icons/fa";
+import Button from "../../components/Button";
+import { topsale } from "../../constants/data";
 
 const HomeRecipeDetail = () => {
   const { id: recipeId } = useParams();
@@ -134,7 +137,62 @@ const HomeRecipeDetail = () => {
             </div>
           </div>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <div className="sideBar">
+            <div className="searchBar">
+              <input type="text" placeholder="Search Product" />
+            </div>
+            <h2>Product Categories</h2>
+            <div className="btnProduct">
+              <Button title="Apple" btnValue={2} />
+            </div>
+            <div className="btnProduct">
+              <Button title="Celebration" btnValue={14} />
+            </div>
+            <div className="btnProduct">
+              <Button title="Chocolate" btnValue={15} />
+            </div>
+            <div className="btnProduct">
+              <Button title="Cupcake" btnValue={17} />
+            </div>
+            <div className="btnProduct">
+              <Button title="Desserts" btnValue={11} />
+            </div>
+            <div className="btnProduct">
+              <Button title="Uncategorized" btnValue={2} />
+            </div>
+            <div className="filterPrice">
+              <h3>Filter By Price</h3>
+              <input type="range" className="intput-range" />
+              <div className="price">
+                <p>Price: $0-$20</p>
+                <p>filter</p>
+              </div>
+            </div>
+            <div className="topSale">
+              <h3>Top Sale Products</h3>
+
+              {topsale.map(({ id, image, title, price }) => {
+                return (
+                  <div className="topSaleProduct" key={id}>
+                    <img src={image} alt="" />
+                    <div className="productInfo">
+                      <p>{title}</p>
+                      <p>
+                        <FaRegStar />
+                        <FaRegStar />
+                        <FaRegStar />
+                        <FaRegStar />
+                        <FaRegStar />
+                      </p>
+                      <p>${price}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
