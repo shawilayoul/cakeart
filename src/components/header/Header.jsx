@@ -91,7 +91,7 @@ const Header = () => {
             {
               searchBar &&
               <div className="searchModel">
-              <input type="text" placeholder="search for rrecipe" />
+              <input type="text" placeholder="search for a recipe" />
             </div>
             }
           
