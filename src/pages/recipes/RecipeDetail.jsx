@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { RecipesData } from "../../constants/data";
 import images from "../../assets/images";
-import "./recipes.scss";
+import "./recipeDetail.scss";
 
 const RecipeDetail = () => {
   const { id: recipeId } = useParams();

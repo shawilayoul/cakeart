@@ -1,6 +1,5 @@
 import images from "../../assets/images";
-import { FaMapMarkerAlt, FaRegClock } from "react-icons/fa";
-
+import { FaMapMarkerAlt, FaRegClock ,FaShoppingBasket} from "react-icons/fa";
 import "./contact.scss";
 
 const Contact = () => {
@@ -16,27 +15,26 @@ const Contact = () => {
         <div className="left">
           <h3>Get in touch</h3>
           <div className="contactInfo">
-            <p>Icon</p>
+            <div className="icon"><FaShoppingBasket /></div>
             <p>
               {" "}
               We are also active in social media. <br /> You can find us on
               below adresses..
             </p>
-            <p>Icon gose here</p>
           </div>
           <div className="contactInfo">
-            <p>
+            <div className="icon">
               <FaMapMarkerAlt />{" "}
-            </p>
+            </div>
             <p>
               329 Queensberry Street, <br /> North Melbourne VIC 3051,
               Australia.
             </p>
           </div>
           <div className="contactInfo">
-            <p>
+            <div className="icon">
               <FaRegClock />
-            </p>
+            </div>
             <p>Opening Hour 8:00 AM – 10:00 PM</p> <p>Monday – Sunday</p>
           </div>
           <div className="contactInfo">

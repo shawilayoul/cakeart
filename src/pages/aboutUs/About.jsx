@@ -11,7 +11,7 @@ const About = () => {
       </div>
       <div className="aboutHistory">
         <div className="left">
-          <img src={images.person2} alt="" />
+          <img src={images.person1} alt="" />
         </div>
         <div className="right">
           <p>
@@ -75,7 +75,7 @@ const About = () => {
             <p>Art Derector</p>
           </div>
           <div className="staffImag">
-            <img src={images.person4} alt="" />
+            <img src={images.person1} alt="" />
             <p>Linda Sara</p>
             <p>Art Derector</p>
           </div>
